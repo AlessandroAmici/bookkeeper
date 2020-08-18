@@ -1,0 +1,9 @@
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/CpuAffinityImpl.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/IsolatedProcessors.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/package-info.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/target/nar/nar-generated/org/apache/bookkeeper/utils/affinity/NarSystem.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/NativeUtils.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/package-info.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/ProcessorsInfo.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/CpuAffinity.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/cpu-affinity/src/main/java/org/apache/bookkeeper/common/util/affinity/impl/CpuAffinityJni.java

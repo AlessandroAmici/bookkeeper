@@ -1,0 +1,130 @@
+2020-08-10 23:47:47,987 - INFO  - [mock-executor-OrderedScheduler-0-0:Crc32cIntChecksum@41] - SSE4.2 CRC32C provider initialized
+2020-08-10 23:47:48,006 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:47:48,010 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:47:48,011 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:47:48,016 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 1
+2020-08-10 23:47:48,017 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b2:3181;L10] erroring write 1
+2020-08-10 23:47:48,020 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 1
+2020-08-10 23:47:48,021 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 1
+2020-08-10 23:47:48,021 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b1:3181;L10] erroring write 1
+2020-08-10 23:47:48,021 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 1): Write failed on bookie
+2020-08-10 23:47:48,039 - ERROR - [mock-executor-OrderedScheduler-0-0:MetadataUpdateLoop@169] - UpdateLoop(ledgerId=10,loopId=025d51d3) Exception updating
+org.apache.bookkeeper.client.BKException$BKNotEnoughBookiesException: Not enough non-faulty bookies available
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.newEnsemble(DefaultEnsemblePlacementPolicy.java:119)
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.replaceBookie(DefaultEnsemblePlacementPolicy.java:128)
+	at org.apache.bookkeeper.client.BookieWatcherImpl.replaceBookie(BookieWatcherImpl.java:308)
+	at org.apache.bookkeeper.client.EnsembleUtils.replaceBookiesInEnsemble(EnsembleUtils.java:71)
+	at org.apache.bookkeeper.client.LedgerHandle.lambda$ensembleChangeLoop$2(LedgerHandle.java:1926)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.writeLoop(MetadataUpdateLoop.java:134)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.run(MetadataUpdateLoop.java:123)
+	at org.apache.bookkeeper.client.LedgerHandle.ensembleChangeLoop(LedgerHandle.java:1945)
+	at org.apache.bookkeeper.client.LedgerHandle.handleBookieFailure(LedgerHandle.java:1894)
+	at org.apache.bookkeeper.client.PendingAddOp.writeComplete(PendingAddOp.java:378)
+	at org.apache.bookkeeper.proto.MockBookieClient.lambda$addEntry$8(MockBookieClient.java:179)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:47:48,046 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 1): Write failed on bookie
+2020-08-10 23:47:48,046 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle@1947] - [EnsembleChange(ledger:10, change-id:0000000001)][attempt:1] Exception changing ensemble
+org.apache.bookkeeper.client.BKException$BKNotEnoughBookiesException: Not enough non-faulty bookies available
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.newEnsemble(DefaultEnsemblePlacementPolicy.java:119)
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.replaceBookie(DefaultEnsemblePlacementPolicy.java:128)
+	at org.apache.bookkeeper.client.BookieWatcherImpl.replaceBookie(BookieWatcherImpl.java:308)
+	at org.apache.bookkeeper.client.EnsembleUtils.replaceBookiesInEnsemble(EnsembleUtils.java:71)
+	at org.apache.bookkeeper.client.LedgerHandle.lambda$ensembleChangeLoop$2(LedgerHandle.java:1926)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.writeLoop(MetadataUpdateLoop.java:134)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.run(MetadataUpdateLoop.java:123)
+	at org.apache.bookkeeper.client.LedgerHandle.ensembleChangeLoop(LedgerHandle.java:1945)
+	at org.apache.bookkeeper.client.LedgerHandle.handleBookieFailure(LedgerHandle.java:1894)
+	at org.apache.bookkeeper.client.PendingAddOp.writeComplete(PendingAddOp.java:378)
+	at org.apache.bookkeeper.proto.MockBookieClient.lambda$addEntry$8(MockBookieClient.java:179)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:47:48,048 - ERROR - [mock-executor-OrderedScheduler-0-0:LedgerHandle@1758] - Closing ledger 10 due to NotEnoughBookiesException: Not enough non-faulty bookies available
+2020-08-10 23:47:48,052 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L10 E1
+2020-08-10 23:47:48,172 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:47:48,174 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:47:48,174 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b2:3181;L10] erroring write 0
+2020-08-10 23:47:48,175 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:47:48,175 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie
+2020-08-10 23:47:48,179 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L10 E0
+2020-08-10 23:47:48,182 - INFO  - [MockLedgerManager:MetadataUpdateLoop@150] - UpdateLoop(ledgerId=10,loopId=5e7f25db) conflict writing metadata to store, update local value and try again
+2020-08-10 23:47:48,191 - ERROR - [mock-executor-OrderedScheduler-0-0:LedgerHandle@1758] - Closing ledger 10 due to LedgerClosedException: Attempt to write to a closed ledger
+2020-08-10 23:47:48,197 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:47:48,198 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:47:48,198 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b2:3181;L10] erroring write 0
+2020-08-10 23:47:48,198 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:47:48,198 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie
+2020-08-10 23:47:48,208 - INFO  - [MockLedgerManager:MetadataUpdateLoop@150] - UpdateLoop(ledgerId=10,loopId=6fcfbe10) conflict writing metadata to store, update local value and try again
+2020-08-10 23:47:48,209 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L10 E0
+2020-08-10 23:47:48,227 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:47:48,228 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 1
+2020-08-10 23:47:48,228 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 2
+2020-08-10 23:47:48,229 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 3
+2020-08-10 23:47:48,229 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 4
+2020-08-10 23:47:48,230 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie
+2020-08-10 23:47:48,232 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 1): Write failed on bookie
+2020-08-10 23:47:48,233 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 2): Write failed on bookie
+2020-08-10 23:47:48,233 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 3): Write failed on bookie
+2020-08-10 23:47:48,234 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 4): Write failed on bookie
+2020-08-10 23:47:48,235 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 4): Write failed on bookie
+2020-08-10 23:47:48,235 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 3): Write failed on bookie
+2020-08-10 23:47:48,236 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 2): Write failed on bookie
+2020-08-10 23:47:48,236 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 1): Write failed on bookie
+2020-08-10 23:47:48,237 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie
+2020-08-10 23:47:48,240 - INFO  - [mock-executor-OrderedScheduler-0-0:LedgerHandle@1978] - New Ensemble: [b5:3181, b4:3181, b3:3181] for ledger: 10
+2020-08-10 23:47:48,243 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b5:3181;L10] write entry 0
+2020-08-10 23:47:48,244 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 0
+2020-08-10 23:47:48,244 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b5:3181;L10] write entry 1
+2020-08-10 23:47:48,245 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 1
+2020-08-10 23:47:48,246 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b5:3181;L10] write entry 2
+2020-08-10 23:47:48,246 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 2
+2020-08-10 23:47:48,247 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b5:3181;L10] write entry 3
+2020-08-10 23:47:48,247 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 3
+2020-08-10 23:47:48,247 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b5:3181;L10] write entry 4
+2020-08-10 23:47:48,248 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 4
+2020-08-10 23:47:48,273 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:47:48,274 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b1:3181;L10] erroring write 0
+2020-08-10 23:47:48,275 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:47:48,276 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b2:3181;L10] erroring write 0
+2020-08-10 23:47:48,276 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:47:48,276 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie
+2020-08-10 23:47:48,277 - ERROR - [mock-executor-OrderedScheduler-0-0:MetadataUpdateLoop@169] - UpdateLoop(ledgerId=10,loopId=0e2789d8) Exception updating
+org.apache.bookkeeper.client.BKException$BKNotEnoughBookiesException: Not enough non-faulty bookies available
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.newEnsemble(DefaultEnsemblePlacementPolicy.java:119)
+	at org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy.replaceBookie(DefaultEnsemblePlacementPolicy.java:128)
+	at org.apache.bookkeeper.client.BookieWatcherImpl.replaceBookie(BookieWatcherImpl.java:308)
+	at org.apache.bookkeeper.client.EnsembleUtils.replaceBookiesInEnsemble(EnsembleUtils.java:71)
+	at org.apache.bookkeeper.client.LedgerHandle.lambda$ensembleChangeLoop$2(LedgerHandle.java:1926)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.writeLoop(MetadataUpdateLoop.java:134)
+	at org.apache.bookkeeper.client.MetadataUpdateLoop.run(MetadataUpdateLoop.java:123)
+	at org.apache.bookkeeper.client.LedgerHandle.ensembleChangeLoop(LedgerHandle.java:1945)
+	at org.apache.bookkeeper.client.LedgerHandle.handleBookieFailure(LedgerHandle.java:1894)
+	at org.apache.bookkeeper.client.PendingAddOp.writeComplete(PendingAddOp.java:378)
+	at org.apache.bookkeeper.proto.MockBookieClient.lambda$addEntry$8(MockBookieClient.java:179)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:859)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:837)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:47:48,280 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 0): Write failed on bookie

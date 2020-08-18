@@ -1,0 +1,10 @@
+com/scurrilous/circe/crc/CRCTest.class
+com/scurrilous/circe/impl/AbstractStatelessIntHashTest.class
+com/scurrilous/circe/CommonHashesTest.class
+com/scurrilous/circe/crc/CRCProvidersTest.class
+com/scurrilous/circe/impl/AbstractIncrementalIntHashTest.class
+com/scurrilous/circe/impl/AbstractStatefulHashTest.class
+com/scurrilous/circe/utils/NativeUtilsTests.class
+com/scurrilous/circe/checksum/ChecksumTest.class
+com/scurrilous/circe/impl/AbstractStatelessLongHashTest.class
+com/scurrilous/circe/impl/AbstractIncrementalLongHashTest.class

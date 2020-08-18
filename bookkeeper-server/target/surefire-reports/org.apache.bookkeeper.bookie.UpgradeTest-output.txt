@@ -1,0 +1,1049 @@
+2020-08-10 23:35:30,770 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.bookie.UpgradeTest
+2020-08-10 23:35:31,222 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:31,250 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase testCommandLine @ metadata service zk://localhost:45151/ledgers in 450 ms.
+2020-08-10 23:35:31,263 - ERROR - [Time-limited test:FileSystemUpgrade@360] - Cannot upgrade without configuration
+2020-08-10 23:35:31,299 - ERROR - [Time-limited test:FileSystemUpgrade@385] - Must specify -upgrade, -finalize or -rollback
+2020-08-10 23:35:31,469 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/173da4cc689.txn
+2020-08-10 23:35:31,674 - INFO  - [Time-limited test:MetadataDrivers@105] - BookKeeper metadata driver manager initialized
+2020-08-10 23:35:31,679 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:31,843 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:31,844 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:161)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:31,851 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:31,855 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:31,878 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15458466675931629823tmpdir
+2020-08-10 23:35:31,998 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15996072883506528716tmpdir
+2020-08-10 23:35:32,137 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:32,140 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:32,201 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:32,219 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie15996072883506528716tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:32,221 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:32,233 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:32,258 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:32,267 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:32,275 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:32,275 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:32,286 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095331465 from position 0
+2020-08-10 23:35:32,286 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc689.txn
+2020-08-10 23:35:32,326 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 42 ms.
+2020-08-10 23:35:32,329 - INFO  - [SyncThread-5-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:32,357 - INFO  - [SyncThread-5-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15996072883506528716tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:32,380 - INFO  - [pool-12-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15996072883506528716tmpdir/current/2.log for logId 2.
+2020-08-10 23:35:32,391 - INFO  - [SyncThread-5-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331465 , logFileOffset - 107316]}.
+2020-08-10 23:35:32,396 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:32,397 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie15458466675931629823tmpdir/current
+2020-08-10 23:35:32,400 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:32,401 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc68a.txn
+2020-08-10 23:35:32,461 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:32,462 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:32,463 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:32,464 - INFO  - [SyncThread-5-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331465 , logFileOffset - 107316]}.
+2020-08-10 23:35:32,472 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:32,474 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:32,513 - INFO  - [BookieJournal-15000:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:32,515 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:32,516 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:32,516 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:32,517 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:32,517 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:32,518 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:32,518 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:32,518 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:32,524 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:32,535 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:32,536 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:32,643 - INFO  - [Time-limited test:FileSystemUpgrade@280] - Rolling back upgrade...
+2020-08-10 23:35:32,645 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:32,654 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie15458466675931629823tmpdir
+2020-08-10 23:35:32,657 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie15996072883506528716tmpdir
+2020-08-10 23:35:32,785 - INFO  - [Time-limited test:FileSystemUpgrade@297] - Done
+2020-08-10 23:35:32,786 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:32,807 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:32,808 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:176)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:215)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:32,809 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:32,810 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:32,825 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15458466675931629823tmpdir
+2020-08-10 23:35:32,831 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15996072883506528716tmpdir
+2020-08-10 23:35:32,957 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:32,958 - INFO  - [Time-limited test:FileSystemUpgrade@242] - Finalizing upgrade...
+2020-08-10 23:35:32,958 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie15458466675931629823tmpdir
+2020-08-10 23:35:32,961 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie15996072883506528716tmpdir
+2020-08-10 23:35:32,964 - INFO  - [Time-limited test:FileSystemUpgrade@275] - Done
+2020-08-10 23:35:32,966 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:32,995 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:32,998 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie15996072883506528716tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:32,998 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:32,999 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:33,000 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:33,001 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:33,002 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:33,002 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:33,003 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095331465 from position 0
+2020-08-10 23:35:33,004 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc689.txn
+2020-08-10 23:35:33,019 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 16 ms.
+2020-08-10 23:35:33,021 - INFO  - [SyncThread-11-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:33,022 - INFO  - [SyncThread-11-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15996072883506528716tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:33,036 - INFO  - [pool-24-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15996072883506528716tmpdir/current/2.log for logId 2.
+2020-08-10 23:35:33,042 - INFO  - [SyncThread-11-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331465 , logFileOffset - 107316]}.
+2020-08-10 23:35:33,047 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:33,050 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie15458466675931629823tmpdir/current
+2020-08-10 23:35:33,053 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:33,053 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc68a.txn
+2020-08-10 23:35:33,056 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:33,056 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:33,056 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:33,059 - INFO  - [SyncThread-11-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331465 , logFileOffset - 107316]}.
+2020-08-10 23:35:33,064 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:33,069 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:33,073 - ERROR - [BookieJournal-15000:Journal@1132] - I/O exception in Journal thread!
+java.nio.channels.ClosedByInterruptException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:199)
+	at java.base/sun.nio.ch.FileChannelImpl.endBlocking(FileChannelImpl.java:162)
+	at java.base/sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:465)
+	at org.apache.bookkeeper.bookie.BufferedChannel.forceWrite(BufferedChannel.java:230)
+	at org.apache.bookkeeper.bookie.JournalChannel.forceWrite(JournalChannel.java:275)
+	at org.apache.bookkeeper.bookie.JournalChannel.<init>(JournalChannel.java:179)
+	at org.apache.bookkeeper.bookie.JournalChannel.<init>(JournalChannel.java:117)
+	at org.apache.bookkeeper.bookie.Journal.run(Journal.java:953)
+2020-08-10 23:35:33,073 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:33,074 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:33,074 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:33,075 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:33,075 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:33,075 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:33,076 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:33,076 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:33,079 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:33,082 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:33,082 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:33,191 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:33,192 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:33,202 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15458466675931629823tmpdir
+2020-08-10 23:35:33,202 - INFO  - [Time-limited test:FileSystemUpgrade@186] - Directory is current, no need to upgrade
+2020-08-10 23:35:33,202 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie15996072883506528716tmpdir
+2020-08-10 23:35:33,203 - INFO  - [Time-limited test:FileSystemUpgrade@186] - Directory is current, no need to upgrade
+2020-08-10 23:35:33,309 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:33,309 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:40867/ledgers : zkServers = localhost:40867, ledgersRootPath = /ledgers.
+2020-08-10 23:35:33,337 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:33,340 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:33,340 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:33,342 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:33,344 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:33,345 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:33,345 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:33,346 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095331465 from position 107316
+2020-08-10 23:35:33,346 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc689.txn
+2020-08-10 23:35:33,347 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095331466 from position 0
+2020-08-10 23:35:33,347 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc68a.txn
+2020-08-10 23:35:33,347 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 1 ms.
+2020-08-10 23:35:33,353 - INFO  - [SyncThread-17-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331466 , logFileOffset - 512]}.
+2020-08-10 23:35:33,357 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:33,359 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie15458466675931629823tmpdir/current
+2020-08-10 23:35:33,361 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie15458466675931629823tmpdir/current/173da4cc68b.txn
+2020-08-10 23:35:33,362 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:33,367 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:33,367 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:33,368 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:33,369 - INFO  - [SyncThread-17-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095331466 , logFileOffset - 512]}.
+2020-08-10 23:35:33,374 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:33,374 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:33,375 - INFO  - [BookieJournal-15000:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:33,375 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:33,375 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:33,375 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:33,376 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:33,377 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:33,377 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:33,377 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:33,378 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:33,378 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:33,378 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:33,378 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:33,637 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie17450161315006793704tmpdir/173da4ccf04.txn
+2020-08-10 23:35:33,666 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:33,692 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:33,692 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:161)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:33,693 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:33,693 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:33,703 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie17450161315006793704tmpdir
+2020-08-10 23:35:33,709 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie865771559800588753tmpdir
+2020-08-10 23:35:33,841 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:33,843 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:33,873 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:33,884 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie865771559800588753tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:33,885 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:33,885 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:33,886 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:33,888 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:33,889 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:33,889 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:33,891 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095333636 from position 0
+2020-08-10 23:35:33,891 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie17450161315006793704tmpdir/current/173da4ccf04.txn
+2020-08-10 23:35:33,914 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 24 ms.
+2020-08-10 23:35:33,916 - INFO  - [SyncThread-23-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:33,926 - INFO  - [SyncThread-23-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie865771559800588753tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:33,939 - INFO  - [pool-44-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie865771559800588753tmpdir/current/2.log for logId 2.
+2020-08-10 23:35:33,946 - INFO  - [SyncThread-23-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095333636 , logFileOffset - 107316]}.
+2020-08-10 23:35:33,950 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:33,951 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie17450161315006793704tmpdir/current
+2020-08-10 23:35:33,951 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:33,951 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie17450161315006793704tmpdir/current/173da4ccf05.txn
+2020-08-10 23:35:33,967 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:33,968 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:33,968 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:33,969 - INFO  - [SyncThread-23-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095333636 , logFileOffset - 107316]}.
+2020-08-10 23:35:33,973 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:33,975 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:33,976 - INFO  - [BookieJournal-15000:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:33,976 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:33,976 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:33,976 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:33,979 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:33,979 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:33,979 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:33,979 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:33,979 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:33,983 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:33,985 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:33,986 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:34,092 - INFO  - [Time-limited test:FileSystemUpgrade@280] - Rolling back upgrade...
+2020-08-10 23:35:34,093 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,103 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie17450161315006793704tmpdir
+2020-08-10 23:35:34,106 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie865771559800588753tmpdir
+2020-08-10 23:35:34,227 - INFO  - [Time-limited test:FileSystemUpgrade@297] - Done
+2020-08-10 23:35:34,228 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,250 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:34,250 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:176)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:34,250 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:34,252 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,275 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie17450161315006793704tmpdir
+2020-08-10 23:35:34,281 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie865771559800588753tmpdir
+2020-08-10 23:35:34,409 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:34,410 - INFO  - [Time-limited test:FileSystemUpgrade@242] - Finalizing upgrade...
+2020-08-10 23:35:34,410 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie17450161315006793704tmpdir
+2020-08-10 23:35:34,412 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie865771559800588753tmpdir
+2020-08-10 23:35:34,414 - INFO  - [Time-limited test:FileSystemUpgrade@275] - Done
+2020-08-10 23:35:34,415 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:44941/ledgers : zkServers = localhost:44941, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,447 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:34,450 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie865771559800588753tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:34,450 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:34,450 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:34,451 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:34,453 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:34,454 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:34,454 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:34,455 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095333636 from position 0
+2020-08-10 23:35:34,455 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie17450161315006793704tmpdir/current/173da4ccf04.txn
+2020-08-10 23:35:34,465 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 10 ms.
+2020-08-10 23:35:34,467 - INFO  - [SyncThread-29-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:34,470 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.CRC32DigestManager.populateValueAndReset(CRC32DigestManager.java:61)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:114)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:109)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:108)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#4:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:107)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+Created at:
+	io.netty.buffer.UnpooledByteBufAllocator.newDirectBuffer(UnpooledByteBufAllocator.java:96)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:113)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:103)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+: 1 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+2020-08-10 23:35:34,483 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.CRC32DigestManager.populateValueAndReset(CRC32DigestManager.java:61)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:114)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:110)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:109)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#4:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:108)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#5:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:107)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+Created at:
+	io.netty.buffer.UnpooledByteBufAllocator.newDirectBuffer(UnpooledByteBufAllocator.java:96)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:113)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:103)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:34,487 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.CRC32DigestManager.populateValueAndReset(CRC32DigestManager.java:61)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:114)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:109)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:108)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#4:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:107)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+Created at:
+	io.netty.buffer.UnpooledByteBufAllocator.newDirectBuffer(UnpooledByteBufAllocator.java:96)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:113)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:103)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV2toCurrent(UpgradeTest.java:202)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+: 1 leak records were discarded because the leak record count is targeted to 4. Use system property io.netty.leakDetection.targetRecords to increase the limit.
+2020-08-10 23:35:34,492 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.CRC32DigestManager.populateValueAndReset(CRC32DigestManager.java:61)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:114)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#2:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:110)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#3:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:109)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#4:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:108)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+#5:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeLong(AdvancedLeakAwareByteBuf.java:568)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:107)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+Created at:
+	io.netty.buffer.UnpooledByteBufAllocator.newDirectBuffer(UnpooledByteBufAllocator.java:96)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	io.netty.buffer.AbstractByteBufAllocator.buffer(AbstractByteBufAllocator.java:113)
+	org.apache.bookkeeper.proto.checksum.DigestManager.computeDigestAndPackageForSending(DigestManager.java:103)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:53)
+	org.apache.bookkeeper.client.ClientUtil.generatePacket(ClientUtil.java:46)
+	org.apache.bookkeeper.bookie.UpgradeTest.writeJournal(UpgradeTest.java:97)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV1JournalDirectory(UpgradeTest.java:115)
+	org.apache.bookkeeper.bookie.UpgradeTest.newV2JournalDirectory(UpgradeTest.java:142)
+	org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeCurrent(UpgradeTest.java:211)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:34,499 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:331)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	org.apache.bookkeeper.bookie.BufferedChannel.<init>(BufferedChannel.java:86)
+	org.apache.bookkeeper.bookie.BufferedChannel.<init>(BufferedChannel.java:77)
+	org.apache.bookkeeper.bookie.BufferedChannel.<init>(BufferedChannel.java:71)
+	org.apache.bookkeeper.bookie.Journal.lambda$getBufferedChannelBuilder$0(Journal.java:1148)
+	org.apache.bookkeeper.bookie.JournalChannel.<init>(JournalChannel.java:178)
+	org.apache.bookkeeper.bookie.JournalChannel.<init>(JournalChannel.java:117)
+	org.apache.bookkeeper.bookie.Journal.run(Journal.java:953)
+2020-08-10 23:35:34,530 - ERROR - [SyncThread-29-1:ResourceLeakDetector@317] - LEAK: ByteBuf.release() was not called before it's garbage-collected. See http://netty.io/wiki/reference-counted-objects.html for more information.
+Recent access records: 
+#1:
+	io.netty.buffer.AdvancedLeakAwareByteBuf.writeBytes(AdvancedLeakAwareByteBuf.java:604)
+	org.apache.bookkeeper.bookie.BufferedChannel.write(BufferedChannel.java:117)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.allocateNewLog(EntryLoggerAllocator.java:171)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.allocateNewLog(EntryLoggerAllocator.java:136)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.lambda$createNewLog$0(EntryLoggerAllocator.java:123)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	java.base/java.lang.Thread.run(Thread.java:834)
+Created at:
+	io.netty.buffer.PooledByteBufAllocator.newDirectBuffer(PooledByteBufAllocator.java:331)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:185)
+	io.netty.buffer.AbstractByteBufAllocator.directBuffer(AbstractByteBufAllocator.java:176)
+	org.apache.bookkeeper.bookie.BufferedChannel.<init>(BufferedChannel.java:86)
+	org.apache.bookkeeper.bookie.EntryLogger$BufferedLogChannel.<init>(EntryLogger.java:92)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.allocateNewLog(EntryLoggerAllocator.java:169)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.allocateNewLog(EntryLoggerAllocator.java:136)
+	org.apache.bookkeeper.bookie.EntryLoggerAllocator.lambda$createNewLog$0(EntryLoggerAllocator.java:123)
+	java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:34,560 - INFO  - [SyncThread-29-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie865771559800588753tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:34,563 - INFO  - [pool-56-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie865771559800588753tmpdir/current/2.log for logId 2.
+2020-08-10 23:35:34,578 - INFO  - [SyncThread-29-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095333636 , logFileOffset - 107316]}.
+2020-08-10 23:35:34,581 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:34,586 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie17450161315006793704tmpdir/current
+2020-08-10 23:35:34,587 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie17450161315006793704tmpdir/current/173da4ccf05.txn
+2020-08-10 23:35:34,587 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:34,591 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:34,592 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:34,592 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:34,593 - INFO  - [SyncThread-29-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095333636 , logFileOffset - 107316]}.
+2020-08-10 23:35:34,597 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:34,599 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:34,599 - INFO  - [BookieJournal-15000:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:34,599 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:34,599 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:34,600 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:34,600 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:34,601 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:34,601 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:34,601 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:34,601 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:34,608 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:34,611 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:34,612 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:34,861 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie16255883044003097043tmpdir/173da4cd3cd.txn
+2020-08-10 23:35:34,889 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,913 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:34,914 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:161)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV1toCurrent(UpgradeTest.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:34,915 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:34,915 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:34,924 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie16255883044003097043tmpdir
+2020-08-10 23:35:34,930 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie2660803972440409144tmpdir
+2020-08-10 23:35:35,054 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:35,056 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:35,082 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:35,084 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie2660803972440409144tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:35,084 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:35,085 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:35,085 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:35,087 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:35,088 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:35,088 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:35,089 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095334861 from position 0
+2020-08-10 23:35:35,089 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie16255883044003097043tmpdir/current/173da4cd3cd.txn
+2020-08-10 23:35:35,097 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 8 ms.
+2020-08-10 23:35:35,098 - INFO  - [SyncThread-35-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:35,099 - INFO  - [SyncThread-35-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie2660803972440409144tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:35,102 - INFO  - [pool-68-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie2660803972440409144tmpdir/current/2.log for logId 2.
+2020-08-10 23:35:35,114 - INFO  - [SyncThread-35-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095334861 , logFileOffset - 107316]}.
+2020-08-10 23:35:35,117 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:35,122 - INFO  - [BookieJournal-15000:Journal@909] - Starting journal on /tmp/bookie16255883044003097043tmpdir/current
+2020-08-10 23:35:35,123 - INFO  - [BookieJournal-15000:JournalChannel@157] - Opening journal /tmp/bookie16255883044003097043tmpdir/current/173da4cd3ce.txn
+2020-08-10 23:35:35,123 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:35,135 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-15000 with exitCode 0
+2020-08-10 23:35:35,135 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:35,135 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:35,136 - INFO  - [SyncThread-35-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095334861 , logFileOffset - 107316]}.
+2020-08-10 23:35:35,139 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:35,140 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:35,140 - INFO  - [BookieJournal-15000:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:35,142 - INFO  - [BookieJournal-15000:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:35,142 - INFO  - [Bookie-15000:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:35,142 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:35,143 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:35,143 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:35,143 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:35,143 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:35,144 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:35,146 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:35,148 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:35,149 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:35,254 - INFO  - [Time-limited test:FileSystemUpgrade@280] - Rolling back upgrade...
+2020-08-10 23:35:35,255 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:35,262 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie16255883044003097043tmpdir
+2020-08-10 23:35:35,262 - INFO  - [Time-limited test:FileSystemUpgrade@304] - Rolling back /tmp/bookie2660803972440409144tmpdir
+2020-08-10 23:35:35,376 - INFO  - [Time-limited test:FileSystemUpgrade@297] - Done
+2020-08-10 23:35:35,377 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:35,402 - ERROR - [Time-limited test:Bookie@217] - Directory layout version is less than 3, upgrade needed
+2020-08-10 23:35:35,403 - ERROR - [Time-limited test:Bookie@481] - Error accessing cookie on disks
+java.io.IOException: Directory layout version is less than 3, upgrade needed
+	at org.apache.bookkeeper.bookie.Bookie.checkDirectoryStructure(Bookie.java:218)
+	at org.apache.bookkeeper.bookie.Bookie.verifyAndGetMissingDirs(Bookie.java:366)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironmentWithStorageExpansion(Bookie.java:435)
+	at org.apache.bookkeeper.bookie.Bookie.checkEnvironment(Bookie.java:253)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:699)
+	at org.apache.bookkeeper.bookie.Bookie.<init>(Bookie.java:617)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeProceedure(UpgradeTest.java:176)
+	at org.apache.bookkeeper.bookie.UpgradeTest.testUpgradeV1toCurrent(UpgradeTest.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:35:35,403 - INFO  - [Time-limited test:FileSystemUpgrade@156] - Upgrading...
+2020-08-10 23:35:35,404 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:35,419 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie16255883044003097043tmpdir
+2020-08-10 23:35:35,425 - INFO  - [Time-limited test:FileSystemUpgrade@183] - Upgrading /tmp/bookie2660803972440409144tmpdir
+2020-08-10 23:35:35,551 - INFO  - [Time-limited test:FileSystemUpgrade@173] - Done
+2020-08-10 23:35:35,551 - INFO  - [Time-limited test:FileSystemUpgrade@242] - Finalizing upgrade...
+2020-08-10 23:35:35,551 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie16255883044003097043tmpdir
+2020-08-10 23:35:35,552 - INFO  - [Time-limited test:FileSystemUpgrade@245] - Finalizing /tmp/bookie2660803972440409144tmpdir
+2020-08-10 23:35:35,552 - INFO  - [Time-limited test:FileSystemUpgrade@275] - Done
+2020-08-10 23:35:35,553 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:34399/ledgers : zkServers = localhost:34399, ledgersRootPath = /ledgers.
+2020-08-10 23:35:35,577 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:35,579 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie2660803972440409144tmpdir/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:35,579 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:35,580 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:35,580 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:35,582 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:35,583 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:35,583 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:35,583 - INFO  - [Time-limited test:Bookie@931] - Replaying journal 1597095334861 from position 0
+2020-08-10 23:35:35,584 - INFO  - [Time-limited test:JournalChannel@157] - Opening journal /tmp/bookie16255883044003097043tmpdir/current/173da4cd3cd.txn
+2020-08-10 23:35:35,590 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 6 ms.
+2020-08-10 23:35:35,591 - INFO  - [SyncThread-41-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:35,592 - INFO  - [SyncThread-41-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie2660803972440409144tmpdir/current/1.log for logId 1.
+2020-08-10 23:35:35,600 - INFO  - [pool-80-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie2660803972440409144tmpdir/current/2.log for logId 2.

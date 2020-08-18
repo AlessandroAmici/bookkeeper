@@ -1,0 +1,133 @@
+2020-08-10 23:48:40,091 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.client.BookKeeperAdminTest
+2020-08-10 23:48:40,460 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:40,648 - INFO  - [Time-limited test:MetadataDrivers@105] - BookKeeper metadata driver manager initialized
+2020-08-10 23:48:40,655 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:40,676 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:40,846 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:48:40,885 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:48:40,885 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:48:40,891 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:48:40,952 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:48:41,181 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "lostBookieRecoveryDelay" : "1800",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "openLedgerRereplicationGracePeriod" : "30000",
+  "ledgerDirectories" : "/tmp/bookie9146662897261784197test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:42775/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie9146662897261784197test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:48:41,379 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:41,387 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:41,397 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:48:41,417 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie9146662897261784197test/current] [/tmp/bookie9146662897261784197test/current]
+2020-08-10 23:48:41,599 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:48:41,622 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie9146662897261784197test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:48:41,624 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:48:41,656 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:48:41,666 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:48:41,675 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:48:41,684 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:48:41,685 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:48:41,724 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:36063 to become writable
+2020-08-10 23:48:41,731 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 1 ms.
+2020-08-10 23:48:41,737 - INFO  - [SyncThread-13-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:48:41,742 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:48:41,744 - INFO  - [BookieJournal-36063:Journal@909] - Starting journal on /tmp/bookie9146662897261784197test/current
+2020-08-10 23:48:41,757 - INFO  - [BookieJournal-36063:JournalChannel@157] - Opening journal /tmp/bookie9146662897261784197test/current/173da58d59b.txn
+2020-08-10 23:48:41,761 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:48:41,794 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36063
+2020-08-10 23:48:42,049 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:36063' has been created.
+2020-08-10 23:48:42,062 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:42,068 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:42,075 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:48:42,076 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:48:42,076 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:48:42,076 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:48:42,084 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36063
+2020-08-10 23:48:42,187 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:48:42,188 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "lostBookieRecoveryDelay" : "1800",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "openLedgerRereplicationGracePeriod" : "30000",
+  "ledgerDirectories" : "/tmp/bookie1771347941214145229test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:42775/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie1771347941214145229test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:48:42,196 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:42,211 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:42,244 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:48:42,259 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie1771347941214145229test/current] [/tmp/bookie1771347941214145229test/current]
+2020-08-10 23:48:42,277 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@467] - AuthProvider used by the Auditor is null
+2020-08-10 23:48:42,279 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:48:42,284 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@471] - Initializing lostBookieRecoveryDelay zNode to the conif value: 1800
+2020-08-10 23:48:42,285 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie1771347941214145229test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:48:42,286 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:48:42,287 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@660] - I'm starting as Auditor Bookie. ID: 127.0.0.1:36063
+2020-08-10 23:48:42,287 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:48:42,294 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:48:42,297 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:48:42,298 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:48:42,298 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:48:42,305 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@698] - Auditor periodic bookie checking enabled 'auditorPeriodicBookieCheckInterval' 86400 seconds
+2020-08-10 23:48:42,307 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@708] - Auditor periodic ledger checking enabled 'auditorPeriodicCheckInterval' 604800 seconds
+2020-08-10 23:48:42,310 - INFO  - [AuditorBookie-127.0.0.1:36063:Auditor@1067] - Starting auditBookies
+2020-08-10 23:48:42,311 - WARN  - [AuditorElector-127.0.0.1:36063:ZkLedgerUnderreplicationManager@945] - checkAllLedgersCtimeZnode is not yet available
+2020-08-10 23:48:42,312 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@733] - checkAllLedgers scheduling info.  checkAllLedgersLastExecutedCTime: -1 durationSinceLastExecutionInSecs: -1 initialDelay: 0 interval: 604800
+2020-08-10 23:48:42,313 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@889] - Periodic placementPolicy check disabled
+2020-08-10 23:48:42,314 - INFO  - [AuditorElector-127.0.0.1:36063:Auditor@897] - Periodic replicas check disabled
+2020-08-10 23:48:42,339 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:42629 to become writable
+2020-08-10 23:48:42,341 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:48:42,347 - INFO  - [SyncThread-32-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:48:42,353 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:48:42,358 - INFO  - [BookieJournal-42629:Journal@909] - Starting journal on /tmp/bookie1771347941214145229test/current
+2020-08-10 23:48:42,361 - INFO  - [AuditorBookie-127.0.0.1:36063:Auditor@1102] - Completed auditBookies
+2020-08-10 23:48:42,368 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:48:42,363 - INFO  - [BookieJournal-42629:JournalChannel@157] - Opening journal /tmp/bookie1771347941214145229test/current/173da58d7fc.txn
+2020-08-10 23:48:42,370 - INFO  - [AuditorBookie-127.0.0.1:36063:Auditor$11@748] - Starting checkAllLedgers
+2020-08-10 23:48:42,377 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:42629
+2020-08-10 23:48:42,378 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:42629
+2020-08-10 23:48:42,386 - INFO  - [AuditorBookie-127.0.0.1:36063:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:42,397 - INFO  - [AuditorBookie-127.0.0.1:36063-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:42,409 - ERROR - [AuditorBookie-127.0.0.1:36063:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:48:42,410 - INFO  - [AuditorBookie-127.0.0.1:36063:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:48:42,411 - INFO  - [AuditorBookie-127.0.0.1:36063:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:48:42,411 - INFO  - [AuditorBookie-127.0.0.1:36063:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:48:42,419 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:42629
+2020-08-10 23:48:42,420 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36063
+2020-08-10 23:48:42,574 - INFO  - [AuditorBookie-127.0.0.1:36063:Auditor$11@751] - Completed checkAllLedgers in 204 milliSeconds
+2020-08-10 23:48:42,630 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:42629' has been created.
+2020-08-10 23:48:42,638 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:42775/ledgers : zkServers = localhost:42775, ledgersRootPath = /ledgers.
+2020-08-10 23:48:42,647 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:48:42,654 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:48:42,655 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:48:42,656 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:48:42,656 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:48:42,662 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:42629
+2020-08-10 23:48:42,665 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36063
+2020-08-10 23:48:42,694 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase testBookieInit @ metadata service zk://localhost:42775/ledgers in 2573 ms.

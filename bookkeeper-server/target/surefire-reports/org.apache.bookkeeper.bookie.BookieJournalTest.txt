@@ -1,0 +1,187 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.bookkeeper.bookie.BookieJournalTest
+-------------------------------------------------------------------------------
+Tests run: 41, Failures: 0, Errors: 39, Skipped: 0, Time elapsed: 11.026 s <<< FAILURE! - in org.apache.bookkeeper.bookie.BookieJournalTest
+testPreV2Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 2.197 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x1ffcf674) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x1ffcf674
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPreV2Journal(BookieJournalTest.java:371)
+
+testV4Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.186 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV4Journal(BookieJournalTest.java:399)
+
+testV5Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.264 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV5Journal(BookieJournalTest.java:429)
+
+testEmptyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testEmptyJournal(BookieJournalTest.java:500)
+
+testHeaderOnlyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.019 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testHeaderOnlyJournal(BookieJournalTest.java:522)
+
+testTruncatedInLenJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.04 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInLenJournal(BookieJournalTest.java:588)
+
+testTruncatedInEntryJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.038 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInEntryJournal(BookieJournalTest.java:631)
+
+testSortedLedgerStorageReplayWithSmallMaxArenaSize(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.043 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testSortedLedgerStorageReplayWithSmallMaxArenaSize(BookieJournalTest.java:693)
+
+testPartialFileInfoPreV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:738)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal1(BookieJournalTest.java:705)
+
+testPartialFileInfoPreV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.027 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:744)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal2(BookieJournalTest.java:713)
+
+testPartialFileInfoPostV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.036 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal1(BookieJournalTest.java:761)
+
+testPartialFileInfoPostV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.036 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal2(BookieJournalTest.java:769)
+
+testJournalScanIOException(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.645 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testJournalScanIOException(BookieJournalTest.java:832)
+
+testPreV2Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.935 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x2676d96a) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x2676d96a
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPreV2Journal(BookieJournalTest.java:371)
+
+testV4Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.055 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV4Journal(BookieJournalTest.java:399)
+
+testV5Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.203 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV5Journal(BookieJournalTest.java:429)
+
+testEmptyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testEmptyJournal(BookieJournalTest.java:500)
+
+testHeaderOnlyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testHeaderOnlyJournal(BookieJournalTest.java:522)
+
+testTruncatedInLenJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.036 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInLenJournal(BookieJournalTest.java:588)
+
+testTruncatedInEntryJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.033 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInEntryJournal(BookieJournalTest.java:631)
+
+testSortedLedgerStorageReplayWithSmallMaxArenaSize(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testSortedLedgerStorageReplayWithSmallMaxArenaSize(BookieJournalTest.java:693)
+
+testPartialFileInfoPreV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:738)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal1(BookieJournalTest.java:705)
+
+testPartialFileInfoPreV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:744)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal2(BookieJournalTest.java:713)
+
+testPartialFileInfoPostV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal1(BookieJournalTest.java:761)
+
+testPartialFileInfoPostV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.032 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal2(BookieJournalTest.java:769)
+
+testJournalScanIOException(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 1.235 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testJournalScanIOException(BookieJournalTest.java:832)
+
+testPreV2Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.954 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x12bb8943) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x12bb8943
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPreV2Journal(BookieJournalTest.java:371)
+
+testV4Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.05 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV4Journal(BookieJournalTest.java:399)
+
+testV5Journal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.187 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testV5Journal(BookieJournalTest.java:429)
+
+testEmptyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testEmptyJournal(BookieJournalTest.java:500)
+
+testHeaderOnlyJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testHeaderOnlyJournal(BookieJournalTest.java:522)
+
+testTruncatedInLenJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInLenJournal(BookieJournalTest.java:588)
+
+testTruncatedInEntryJournal(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.035 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.createBookieAndReadJournal(BookieJournalTest.java:658)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testTruncatedInEntryJournal(BookieJournalTest.java:631)
+
+testSortedLedgerStorageReplayWithSmallMaxArenaSize(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.039 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testSortedLedgerStorageReplayWithSmallMaxArenaSize(BookieJournalTest.java:693)
+
+testPartialFileInfoPreV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.021 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:738)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal1(BookieJournalTest.java:705)
+
+testPartialFileInfoPreV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.019 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal(BookieJournalTest.java:744)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPreV3Journal2(BookieJournalTest.java:713)
+
+testPartialFileInfoPostV3Journal1(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal1(BookieJournalTest.java:761)
+
+testPartialFileInfoPostV3Journal2(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.03 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal(BookieJournalTest.java:794)
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testPartialFileInfoPostV3Journal2(BookieJournalTest.java:769)
+
+testJournalScanIOException(org.apache.bookkeeper.bookie.BookieJournalTest)  Time elapsed: 0.403 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieJournalTest.testJournalScanIOException(BookieJournalTest.java:832)
+

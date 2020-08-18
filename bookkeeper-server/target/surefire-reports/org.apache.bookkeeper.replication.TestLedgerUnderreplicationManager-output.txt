@@ -1,0 +1,135 @@
+2020-08-10 23:23:47,221 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:47,313 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:47,327 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:50,371 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:50,372 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:51,692 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:51,712 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:51,721 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:51,765 - WARN  - [main:ZkLedgerUnderreplicationManager@1037] - replicasCheckCtimeZnode is not yet available
+2020-08-10 23:23:52,004 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:52,009 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:53,880 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:53,896 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:53,906 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:56,813 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:56,814 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:58,167 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:58,183 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:58,190 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:59,644 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:23:59,780 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:59,793 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:23:59,801 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:00,090 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:00,091 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:01,296 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:01,314 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:01,321 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:01,357 - WARN  - [main:ZkLedgerUnderreplicationManager@945] - checkAllLedgersCtimeZnode is not yet available
+2020-08-10 23:24:01,588 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:01,588 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:03,184 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:03,206 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:03,216 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:04,621 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:04,755 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:04,770 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:04,778 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:06,094 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:07,448 - ERROR - [pool-52-thread-1:ZkLedgerUnderreplicationManager@728] - Error while checking the state of ledger re-replication
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /ledgers/underreplication/disable
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2021)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.access$2301(ZooKeeperClient.java:70)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$13.call(ZooKeeperClient.java:830)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$13.call(ZooKeeperClient.java:824)
+	at org.apache.bookkeeper.zookeeper.ZooWorker.syncCallWithRetries(ZooWorker.java:140)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.exists(ZooKeeperClient.java:824)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2049)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.access$2401(ZooKeeperClient.java:70)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$14.call(ZooKeeperClient.java:851)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$14.call(ZooKeeperClient.java:845)
+	at org.apache.bookkeeper.zookeeper.ZooWorker.syncCallWithRetries(ZooWorker.java:140)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.exists(ZooKeeperClient.java:845)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.isLedgerReplicationEnabled(ZkLedgerUnderreplicationManager.java:725)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.waitIfLedgerReplicationDisabled(ZkLedgerUnderreplicationManager.java:620)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.getLedgerToRereplicate(ZkLedgerUnderreplicationManager.java:601)
+	at org.apache.bookkeeper.replication.TestLedgerUnderreplicationManager$1.call(TestLedgerUnderreplicationManager.java:165)
+	at org.apache.bookkeeper.replication.TestLedgerUnderreplicationManager$1.call(TestLedgerUnderreplicationManager.java:162)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-08-10 23:24:07,455 - ERROR - [pool-52-thread-1:TestLedgerUnderreplicationManager$1@167] - Error getting ledger id
+org.apache.bookkeeper.replication.ReplicationException$UnavailableException: Error contacting zookeeper
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.isLedgerReplicationEnabled(ZkLedgerUnderreplicationManager.java:730)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.waitIfLedgerReplicationDisabled(ZkLedgerUnderreplicationManager.java:620)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.getLedgerToRereplicate(ZkLedgerUnderreplicationManager.java:601)
+	at org.apache.bookkeeper.replication.TestLedgerUnderreplicationManager$1.call(TestLedgerUnderreplicationManager.java:165)
+	at org.apache.bookkeeper.replication.TestLedgerUnderreplicationManager$1.call(TestLedgerUnderreplicationManager.java:162)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /ledgers/underreplication/disable
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2021)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.access$2301(ZooKeeperClient.java:70)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$13.call(ZooKeeperClient.java:830)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$13.call(ZooKeeperClient.java:824)
+	at org.apache.bookkeeper.zookeeper.ZooWorker.syncCallWithRetries(ZooWorker.java:140)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.exists(ZooKeeperClient.java:824)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2049)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.access$2401(ZooKeeperClient.java:70)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$14.call(ZooKeeperClient.java:851)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient$14.call(ZooKeeperClient.java:845)
+	at org.apache.bookkeeper.zookeeper.ZooWorker.syncCallWithRetries(ZooWorker.java:140)
+	at org.apache.bookkeeper.zookeeper.ZooKeeperClient.exists(ZooKeeperClient.java:845)
+	at org.apache.bookkeeper.meta.ZkLedgerUnderreplicationManager.isLedgerReplicationEnabled(ZkLedgerUnderreplicationManager.java:725)
+	... 8 more
+2020-08-10 23:24:07,480 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:07,501 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:07,510 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:07,542 - INFO  - [main:ZkLedgerUnderreplicationManager@678] - Auto ledger re-replication is disabled!
+2020-08-10 23:24:07,543 - INFO  - [main:TestLedgerUnderreplicationManager@560] - Disabled Ledeger Replication
+2020-08-10 23:24:08,799 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:08,799 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:09,989 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:10,006 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:10,013 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:10,360 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:10,360 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:11,803 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:11,817 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:11,825 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:11,853 - WARN  - [main:ZkLedgerUnderreplicationManager@992] - placementPolicyCheckCtimeZnode is not yet available
+2020-08-10 23:24:12,092 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:12,092 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:13,598 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:13,612 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:13,623 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:13,917 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:13,918 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:15,921 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:15,946 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:15,958 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:17,312 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:17,312 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:18,550 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:18,565 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:18,571 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:18,971 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:18,973 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:20,500 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:20,516 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:20,523 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:21,913 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:21,913 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:23,725 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:23,740 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:23,746 - INFO  - [main-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:24:24,046 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.
+2020-08-10 23:24:24,046 - INFO  - [main-EventThread:ZooKeeperWatcherBase@134] - ZooKeeper client is disconnected from zookeeper now, but it is OK unless we received EXPIRED event.

@@ -1,0 +1,14 @@
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/Command.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/common/BKCommand.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/common/BKFlags.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CliCommandGroup.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/package-info.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/HelpCommand.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CliSpec.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/common/BKCommandCategories.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CommandGroup.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CliCommand.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CliFlags.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/CommandUtils.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/common/package-info.java
+/home/cecbazinga/Desktop/Deangelis/bookkeeper1/tools/framework/src/main/java/org/apache/bookkeeper/tools/framework/Cli.java

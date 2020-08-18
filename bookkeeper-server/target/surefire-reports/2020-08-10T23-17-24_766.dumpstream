@@ -1,0 +1,990 @@
+# Created on 2020-08-10T23:17:24.766
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:17:24.767
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:17:24.767
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:17:24.767
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:17:24.767
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:17:30.652
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:17:30.653
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:17:30.653
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:17:30.653
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:17:30.653
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:18:31.603
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:18:31.603
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:18:31.604
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:18:31.604
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:18:31.604
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:18:48.127
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:18:48.128
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:18:48.128
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:18:48.128
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:18:48.128
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:19:34.902
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:19:34.902
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:19:34.902
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:19:34.902
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:19:34.902
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:19:52.152
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:19:52.153
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:19:52.153
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:19:52.153
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:19:52.153
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:20:04.484
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:20:04.484
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:20:04.484
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:20:04.484
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:20:04.484
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:21:37.506
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:21:37.506
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:21:37.506
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:21:37.507
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:21:37.507
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:22:11.009
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:22:11.009
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:22:11.009
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:22:11.009
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:22:11.009
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:23:40.398
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:23:40.398
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:23:40.398
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:23:40.398
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:23:40.398
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:23:47.477
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:23:47.478
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:23:47.478
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:23:47.478
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:23:47.478
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:24:31.211
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:24:31.212
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:24:31.212
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:24:31.212
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:24:31.212
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:26:11.822
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:26:11.823
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:26:11.823
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:26:11.823
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:26:11.823
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:26:24.774
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:26:24.774
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:26:24.774
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:26:24.775
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:26:24.775
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:26:32.998
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:26:32.998
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:26:32.999
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:26:32.999
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:26:32.999
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:26:37.772
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:26:37.772
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:26:37.772
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:26:37.772
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:26:37.772
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:00.870
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:00.870
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:28:00.870
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:28:00.870
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:00.870
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:12.229
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:12.229
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:28:12.229
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:28:12.229
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:12.230
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:26.762
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:26.762
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:28:26.762
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:28:26.762
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:26.762
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:33.409
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:33.409
+WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/home/cecbazinga/Desktop/Deangelis/bookkeeper1/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+
+# Created on 2020-08-10T23:28:33.410
+WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+
+# Created on 2020-08-10T23:28:33.410
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:33.410
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:36.349
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:36.349
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:28:36.349
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:28:36.349
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:36.349
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:28:50.418
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:28:50.419
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:28:50.419
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:28:50.419
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:28:50.419
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:01.688
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:01.689
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:29:01.689
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:29:01.690
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:01.690
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:08.048
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:08.048
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:29:08.048
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:29:08.048
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:08.048
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:31.714
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:31.715
+WARNING: Illegal reflective access by org.mockito.internal.util.reflection.AccessibilityChanger (file:/home/cecbazinga/.m2/repository/org/mockito/mockito-core/3.0.0/mockito-core-3.0.0.jar) to field java.lang.Thread.name
+
+# Created on 2020-08-10T23:29:31.715
+WARNING: Please consider reporting this to the maintainers of org.mockito.internal.util.reflection.AccessibilityChanger
+
+# Created on 2020-08-10T23:29:31.715
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:31.715
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:38.504
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:38.504
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to field java.lang.reflect.Field.modifiers
+
+# Created on 2020-08-10T23:29:38.504
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:29:38.504
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:38.504
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:43.565
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:43.565
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:29:43.565
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:29:43.565
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:43.565
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:29:51.065
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:29:51.066
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:29:51.066
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:29:51.066
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:29:51.066
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:30:44.262
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:30:44.262
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:30:44.262
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:30:44.262
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:30:44.263
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:32:54.071
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:32:54.072
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:32:54.072
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:32:54.072
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:32:54.072
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:32:58.852
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:32:58.853
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:32:58.853
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:32:58.853
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:32:58.853
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:33:11.355
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:33:11.355
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:33:11.355
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:33:11.355
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:33:11.356
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:33:23.227
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:33:23.227
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:33:23.227
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:33:23.227
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:33:23.228
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:33:29.749
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:33:29.749
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:33:29.749
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:33:29.749
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:33:29.749
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:33:33.520
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:33:33.520
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:33:33.520
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:33:33.520
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:33:33.520
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:34:12.068
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:34:12.069
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:34:12.069
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:34:12.069
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:34:12.069
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:34:28.470
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:34:28.470
+WARNING: Illegal reflective access by org.apache.bookkeeper.proto.checksum.DirectMemoryCRC32Digest (file:/home/cecbazinga/Desktop/Deangelis/bookkeeper1/bookkeeper-server/target/classes/) to method java.util.zip.CRC32.updateByteBuffer(int,long,int,int)
+
+# Created on 2020-08-10T23:34:28.470
+WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.proto.checksum.DirectMemoryCRC32Digest
+
+# Created on 2020-08-10T23:34:28.470
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:34:28.470
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:34:31.439
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:34:31.440
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:34:31.440
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:34:31.440
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:34:31.440
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:34:42.927
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:34:42.928
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:34:42.928
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:34:42.928
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:34:42.928
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:34:57.525
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:34:57.525
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:34:57.525
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:34:57.525
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:34:57.526
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:35:17.475
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:35:17.475
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:35:17.476
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:35:17.476
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:35:17.476
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:35:31.570
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:35:31.571
+WARNING: Illegal reflective access by org.apache.bookkeeper.proto.checksum.DirectMemoryCRC32Digest (file:/home/cecbazinga/Desktop/Deangelis/bookkeeper1/bookkeeper-server/target/classes/) to method java.util.zip.CRC32.updateByteBuffer(int,long,int,int)
+
+# Created on 2020-08-10T23:35:31.571
+WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.proto.checksum.DirectMemoryCRC32Digest
+
+# Created on 2020-08-10T23:35:31.571
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:35:31.571
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:35:40.506
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:35:40.507
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:35:40.507
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:35:40.507
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:35:40.507
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:35:47.244
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:35:47.244
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.System.initPhase1()
+
+# Created on 2020-08-10T23:35:47.244
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:35:47.245
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:35:47.245
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:36:18.995
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:36:18.995
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:36:18.996
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:36:18.996
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:36:18.996
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:37:32.205
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:37:32.205
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:37:32.205
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:37:32.205
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:37:32.205
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:37:49.031
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:37:49.031
+WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/home/cecbazinga/Desktop/Deangelis/bookkeeper1/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+
+# Created on 2020-08-10T23:37:49.032
+WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+
+# Created on 2020-08-10T23:37:49.032
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:37:49.032
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:38:37.118
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:38:37.120
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:38:37.120
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:38:37.121
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:38:37.121
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:38:58.657
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:38:58.658
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:38:58.658
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:38:58.658
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:38:58.658
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:39:02.314
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:39:02.314
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:39:02.314
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:39:02.315
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:39:02.320
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:40:35.166
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:40:35.166
+WARNING: Illegal reflective access by org.powermock.reflect.internal.WhiteboxImpl (file:/home/cecbazinga/.m2/repository/org/powermock/powermock-reflect/2.0.2/powermock-reflect-2.0.2.jar) to method java.lang.Object.clone()
+
+# Created on 2020-08-10T23:40:35.166
+WARNING: Please consider reporting this to the maintainers of org.powermock.reflect.internal.WhiteboxImpl
+
+# Created on 2020-08-10T23:40:35.166
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:40:35.166
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:40:43.571
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:40:43.571
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:40:43.571
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:40:43.572
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:40:43.572
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:40:55.760
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:40:55.761
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:40:55.761
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:40:55.761
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:40:55.761
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:41:00.360
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:41:00.360
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:41:00.360
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:41:00.360
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:41:00.360
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:41:24.667
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:41:24.667
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:41:24.667
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:41:24.667
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:41:24.668
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:41:58.344
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:41:58.344
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:41:58.344
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:41:58.344
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:41:58.344
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:42:03.802
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:42:03.802
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:42:03.802
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:42:03.802
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:42:03.802
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:42:39.248
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:42:39.248
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:42:39.248
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:42:39.248
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:42:39.248
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:43:18.088
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:43:18.089
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:43:18.089
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:43:18.089
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:43:18.089
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:44:00.288
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:44:00.289
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:44:00.289
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:44:00.289
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:44:00.289
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:46:07.834
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:46:07.834
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:46:07.834
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:46:07.834
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:46:07.834
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:47:47.791
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:47:47.791
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:47:47.791
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:47:47.791
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:47:47.791
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:47:52.439
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:47:52.439
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:47:52.439
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:47:52.439
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:47:52.439
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:48:05.085
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:48:05.085
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:48:05.086
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:48:05.086
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:48:05.086
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:48:31.972
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:48:31.972
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:48:31.972
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:48:31.972
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:48:31.972
+WARNING: All illegal access operations will be denied in a future release
+
+# Created on 2020-08-10T23:48:41.514
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-08-10T23:48:41.514
+WARNING: Illegal reflective access by com.google.protobuf.UnsafeUtil (file:/home/cecbazinga/.m2/repository/com/google/protobuf/protobuf-java/3.5.1/protobuf-java-3.5.1.jar) to field java.nio.Buffer.address
+
+# Created on 2020-08-10T23:48:41.514
+WARNING: Please consider reporting this to the maintainers of com.google.protobuf.UnsafeUtil
+
+# Created on 2020-08-10T23:48:41.514
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-08-10T23:48:41.514
+WARNING: All illegal access operations will be denied in a future release
+

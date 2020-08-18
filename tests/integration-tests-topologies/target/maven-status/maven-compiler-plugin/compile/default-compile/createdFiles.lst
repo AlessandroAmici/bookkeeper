@@ -1,0 +1,11 @@
+org/apache/bookkeeper/tests/containers/BKStandaloneContainer.class
+org/apache/bookkeeper/tests/containers/wait/ZKWaitStrategy.class
+org/apache/bookkeeper/tests/containers/BookieContainer.class
+org/apache/bookkeeper/tests/containers/ZKContainer.class
+org/apache/bookkeeper/tests/containers/wait/HttpWaitStrategy.class
+org/apache/bookkeeper/tests/containers/wait/package-info.class
+org/apache/bookkeeper/tests/containers/package-info.class
+org/apache/bookkeeper/tests/containers/ChaosContainer$2.class
+org/apache/bookkeeper/tests/containers/ChaosContainer.class
+org/apache/bookkeeper/tests/containers/ChaosContainer$1.class
+org/apache/bookkeeper/tests/containers/MetadataStoreContainer.class

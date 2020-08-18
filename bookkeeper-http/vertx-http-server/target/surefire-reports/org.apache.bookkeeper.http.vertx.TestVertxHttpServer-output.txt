@@ -1,0 +1,11 @@
+log4j:WARN No appenders could be found for logger (io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Aug 10, 2020 11:17:00 PM io.vertx.core.spi.resolver.ResolverProvider
+INFO: Using the default address resolver as the dns resolver could not be loaded
+Aug 10, 2020 11:17:01 PM io.vertx.core.spi.resolver.ResolverProvider
+INFO: Using the default address resolver as the dns resolver could not be loaded
+Aug 10, 2020 11:17:01 PM io.vertx.core.spi.resolver.ResolverProvider
+INFO: Using the default address resolver as the dns resolver could not be loaded
+Aug 10, 2020 11:17:01 PM io.vertx.core.spi.resolver.ResolverProvider
+INFO: Using the default address resolver as the dns resolver could not be loaded

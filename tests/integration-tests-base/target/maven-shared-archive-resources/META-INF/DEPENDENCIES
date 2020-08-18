@@ -1,0 +1,349 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache BookKeeper :: Tests :: Base module for Arquillian based integration tests
+
+
+From: 'an unknown organization'
+  - JCommander (http://beust.com/jcommander) com.beust:jcommander:jar:1.48
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - docker-java (https://github.com/docker-java/docker-java) com.github.docker-java:docker-java:jar:3.0.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - FindBugs-jsr305 (http://findbugs.sourceforge.net/) com.google.code.findbugs:jsr305:jar:3.0.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Guava: Google Core Libraries for Java (https://github.com/google/guava/guava) com.google.guava:guava:bundle:21.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - QDox (http://qdox.codehaus.org) com.thoughtworks.qdox:qdox:jar:1.12.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - picocli - a mighty tiny Command Line Interface (http://picocli.info) info.picocli:picocli:jar:4.0.1
+    License: The Apache Software License, version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JLine (http://nexus.sonatype.org/oss-repository-hosting.html/jline) jline:jline:jar:2.11
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+  - Java Native Access  net.java.dev.jna:jna:jar:3.2.7
+
+  - Java Native Access Platform (https://github.com/java-native-access/jna) net.java.dev.jna:jna-platform:jar:4.5.1
+    License: LGPL, version 2.1  (http://www.gnu.org/licenses/licenses.html)    License: Apache License v2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - org.apiguardian:apiguardian-api (https://github.com/apiguardian-team/apiguardian) org.apiguardian:apiguardian-api:jar:1.0.0
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs (http://www.bouncycastle.org/java.html) org.bouncycastle:bcpkix-jdk15on:jar:1.60
+    License: Bouncy Castle Licence  (http://www.bouncycastle.org/licence.html)
+  - Bouncy Castle Provider (http://www.bouncycastle.org/java.html) org.bouncycastle:bcprov-jdk15on:jar:1.60
+    License: Bouncy Castle Licence  (http://www.bouncycastle.org/licence.html)
+  - IntelliJ IDEA Annotations (http://www.jetbrains.org) org.jetbrains:annotations:jar:15.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JUnit Jupiter API (https://junit.org/junit5/) org.junit.jupiter:junit-jupiter-api:jar:5.4.0
+    License: Eclipse Public License v2.0  (http://www.eclipse.org/legal/epl-v20.html)
+  - JUnit Jupiter Engine (https://junit.org/junit5/) org.junit.jupiter:junit-jupiter-engine:jar:5.4.0
+    License: Eclipse Public License v2.0  (http://www.eclipse.org/legal/epl-v20.html)
+  - JUnit Platform Commons (https://junit.org/junit5/) org.junit.platform:junit-platform-commons:jar:1.4.0
+    License: Eclipse Public License v2.0  (http://www.eclipse.org/legal/epl-v20.html)
+  - JUnit Platform Engine API (https://junit.org/junit5/) org.junit.platform:junit-platform-engine:jar:1.4.0
+    License: Eclipse Public License v2.0  (http://www.eclipse.org/legal/epl-v20.html)
+  - JUnit Platform Launcher (https://junit.org/junit5/) org.junit.platform:junit-platform-launcher:jar:1.4.0
+    License: Eclipse Public License v2.0  (http://www.eclipse.org/legal/epl-v20.html)
+  - org.opentest4j:opentest4j (https://github.com/ota4j-team/opentest4j) org.opentest4j:opentest4j:jar:1.1.1
+    License: The Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - TCP to Unix Socket Proxy (https://github.com/rnorth/tcp-unix-socket-proxy) org.rnorth:tcp-unix-socket-proxy:jar:1.0.2
+    License: MIT  (http://opensource.org/licenses/MIT)
+  - Duct Tape (https://github.com/rnorth/duct-tape) org.rnorth.duct-tape:duct-tape:jar:1.0.7
+    License: MIT  (http://opensource.org/licenses/MIT)
+  - Visible Assertions (https://github.com/rnorth/visible-assertions) org.rnorth.visible-assertions:visible-assertions:jar:2.1.1
+    License: MIT  (http://opensource.org/licenses/MIT)
+  - Plexus Cipher: encryption/decryption Component (http://spice.sonatype.org/plexus-cipher) org.sonatype.plexus:plexus-cipher:jar:1.4
+    License: Apache Public License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Plexus Security Dispatcher Component (http://spice.sonatype.org/plexus-sec-dispatcher) org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+    License: Apache Public License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Testcontainers Core (https://testcontainers.org) org.testcontainers:testcontainers:jar:1.8.3
+    License: MIT  (http://opensource.org/licenses/MIT)
+  - testng (http://testng.org) org.testng:testng:jar:6.13.1
+    License: Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - SnakeYAML (http://www.snakeyaml.org) org.yaml:snakeyaml:bundle:1.19
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Apache Log4j (http://logging.apache.org/log4j/1.2/) log4j:log4j:bundle:1.2.17
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (https://apache.org)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-all:pom:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-ant:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-cli-commons:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-cli-picocli:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-console:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-datetime:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-docgenerator:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-groovydoc:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-groovysh:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-jmx:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-json:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-jsr223:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-macro:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-nio:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-servlet:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-sql:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-swing:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-templates:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-test:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-test-junit5:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-testng:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Groovy (https://groovy-lang.org) org.codehaus.groovy:groovy-xml:jar:2.5.8
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Codehaus' (http://www.codehaus.org/)
+  - Plexus :: Component Annotations (http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/) org.codehaus.plexus:plexus-component-annotations:jar:1.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Plexus Interpolation API (http://plexus.codehaus.org/plexus-components/plexus-interpolation) org.codehaus.plexus:plexus-interpolation:jar:1.21
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Plexus Common Utilities (http://plexus.codehaus.org/plexus-utils) org.codehaus.plexus:plexus-utils:jar:3.0.22
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'FasterXML' (http://fasterxml.com/)
+  - Jackson-annotations (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-annotations:bundle:2.11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-core (https://github.com/FasterXML/jackson-core) com.fasterxml.jackson.core:jackson-core:bundle:2.11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - jackson-databind (http://github.com/FasterXML/jackson) com.fasterxml.jackson.core:jackson-databind:bundle:2.11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-JAXRS-base (http://wiki.fasterxml.com/JacksonHome/jackson-jaxrs-base) com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:bundle:2.6.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-JAXRS-JSON (http://wiki.fasterxml.com/JacksonHome/jackson-jaxrs-json-provider) com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:bundle:2.6.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jackson-module-JAXB-annotations (http://wiki.fasterxml.com/JacksonJAXBAnnotations) com.fasterxml.jackson.module:jackson-module-jaxb-annotations:bundle:2.6.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'GlassFish Community' (https://glassfish.dev.java.net)
+  - OSGi resource locator bundle - used by various API providers that rely on META-INF/services mechanism to locate providers. (http://glassfish.org/osgi-resource-locator/) org.glassfish.hk2:osgi-resource-locator:jar:1.0.1
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html)
+
+From: 'GlassFish Community' (https://javaee.github.io/glassfish)
+  - javax.annotation API (http://jcp.org/en/jsr/detail?id=250) javax.annotation:javax.annotation-api:jar:1.3.2
+    License: CDDL + GPLv2 with classpath exception  (https://github.com/javaee/javax.annotation/blob/master/LICENSE)
+
+From: 'JBoss by Red Hat' (http://www.jboss.org)
+  - Arquillian Cube API (http://arquillian.org/arquillian-cube-api) org.arquillian.cube:arquillian-cube-api:jar:1.18.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Cube Core (http://arquillian.org/arquillian-cube-core) org.arquillian.cube:arquillian-cube-core:jar:1.18.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Cube Docker (http://arquillian.org/arquillian-cube-docker-parent/arquillian-cube-docker) org.arquillian.cube:arquillian-cube-docker:jar:1.18.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - arquillian-cube-requirement-spi (http://arquillian.org/arquillian-cube-requirement-spi) org.arquillian.cube:arquillian-cube-requirement-spi:jar:1.18.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Cube SPI (http://arquillian.org/arquillian-cube-spi) org.arquillian.cube:arquillian-cube-spi:jar:1.18.2
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - arquillian-core-reporter-api (http://arquillian.org/arquillian-core-reporter/arquillian-core-reporter-api) org.arquillian.reporter:arquillian-core-reporter-api:jar:0.0.3
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Reporter API (http://arquillian.org/arquillian-reporter-api) org.arquillian.reporter:arquillian-reporter-api:jar:0.0.3
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Spacelift Implementation (http://www.jboss.org/arquillian-spacelift-aggregator/arquillian-spacelift) org.arquillian.spacelift:arquillian-spacelift:jar:1.0.2
+    License: Public Domain  (http://repository.jboss.org/licenses/cc0-1.0.txt)
+  - Arquillian Spacelift API (http://www.jboss.org/arquillian-spacelift-aggregator/arquillian-spacelift-api) org.arquillian.spacelift:arquillian-spacelift-api:jar:1.0.2
+    License: Public Domain  (http://repository.jboss.org/licenses/cc0-1.0.txt)
+  - Arquillian Core API (http://arquillian.org/arquillian-build/arquillian-core-api) org.jboss.arquillian.core:arquillian-core-api:jar:1.6.0.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Core SPI (http://arquillian.org/arquillian-build/arquillian-core-spi) org.jboss.arquillian.core:arquillian-core-spi:jar:1.4.0.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Test API (http://arquillian.org/arquillian-build/arquillian-test-api) org.jboss.arquillian.test:arquillian-test-api:jar:1.6.0.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Test SPI (http://arquillian.org/arquillian-build/arquillian-test-spi) org.jboss.arquillian.test:arquillian-test-spi:jar:1.6.0.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Resolver API (http://www.jboss.org/shrinkwrap-resolver-parent/shrinkwrap-resolver-api) org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api:jar:3.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Resolver Maven API (http://www.jboss.org/shrinkwrap-resolver-parent/shrinkwrap-resolver-api-maven) org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-api-maven:jar:3.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Resolver Maven Implementation (http://www.jboss.org/shrinkwrap-resolver-parent/shrinkwrap-resolver-impl-maven) org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-impl-maven:jar:3.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Resolver SPI (http://www.jboss.org/shrinkwrap-resolver-parent/shrinkwrap-resolver-spi) org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi:jar:3.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Resolver Maven SPI (http://www.jboss.org/shrinkwrap-resolver-parent/shrinkwrap-resolver-spi-maven) org.jboss.shrinkwrap.resolver:shrinkwrap-resolver-spi-maven:jar:3.0.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Joe Walnes, Henri Tremblay, Leonardo Mesquita'
+  - Objenesis (http://objenesis.org) org.objenesis:objenesis:jar:2.6
+    License: Apache 2  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Jonathan Hedley' (http://jonathanhedley.com/)
+  - jsoup (http://jsoup.org/) org.jsoup:jsoup:jar:1.7.2
+    License: The MIT License  (http://jsoup.com/license)
+
+From: 'Kohlschütter Search Intelligence' (https://www.kohlschutter.com/)
+  - junixsocket-common (https://github.com/kohlschutter/junixsocket/junixsocket-common) com.kohlschutter.junixsocket:junixsocket-common:jar:2.0.4
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - junixsocket-native-common (https://github.com/kohlschutter/junixsocket/junixsocket-native-common) com.kohlschutter.junixsocket:junixsocket-native-common:jar:2.0.4
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com)
+  - HK2 API module (https://hk2.java.net/hk2-api) org.glassfish.hk2:hk2-api:jar:2.4.0-b34
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html)
+  - ServiceLocator Default Implementation (https://hk2.java.net/hk2-locator) org.glassfish.hk2:hk2-locator:jar:2.4.0-b34
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html)
+  - HK2 Implementation Utilities (https://hk2.java.net/hk2-utils) org.glassfish.hk2:hk2-utils:jar:2.4.0-b34
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html)
+  - aopalliance version 1.0 repackaged as a module (https://hk2.java.net/external/aopalliance-repackaged) org.glassfish.hk2.external:aopalliance-repackaged:jar:2.4.0-b34
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html)
+  - javax.inject:1 as OSGi bundle (https://hk2.java.net/external/javax.inject) org.glassfish.hk2.external:javax.inject:jar:2.4.0-b34
+    License: CDDL + GPLv2 with classpath exception  (https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - javax.ws.rs-api (http://jax-rs-spec.java.net) javax.ws.rs:javax.ws.rs-api:jar:2.0.1
+    License: CDDL 1.1  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jaxb-api (https://github.com/javaee/jaxb-spec/jaxb-api) javax.xml.bind:jaxb-api:jar:2.3.0
+    License: CDDL 1.1  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)    License: GPL2 w/ CPE  (https://oss.oracle.com/licenses/CDDL+GPL-1.1)
+  - jersey-repackaged-guava (https://jersey.java.net/project/project/jersey-guava/) org.glassfish.jersey.bundles.repackaged:jersey-guava:bundle:2.23.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jersey-connectors-apache (https://jersey.java.net/project/jersey-apache-connector/) org.glassfish.jersey.connectors:jersey-apache-connector:jar:2.23.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jersey-core-client (https://jersey.java.net/jersey-client/) org.glassfish.jersey.core:jersey-client:jar:2.23.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - jersey-core-common (https://jersey.java.net/jersey-common/) org.glassfish.jersey.core:jersey-common:jar:2.23.1
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - JCL 1.1.1 implemented over SLF4J (http://www.slf4j.org) org.slf4j:jcl-over-slf4j:jar:1.7.21
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.25
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J Extensions Module (http://www.slf4j.org) org.slf4j:slf4j-ext:jar:1.7.25
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'SciJava' (http://www.scijava.org/)
+  - Native Library Loader (http://github.com/scijava/native-lib-loader) org.scijava:native-lib-loader:jar:2.0.2
+    License: CC0 1.0 Universal License  (http://creativecommons.org/publicdomain/zero/1.0/)
+
+From: 'Shigeru Chiba, www.javassist.org'
+  - Javassist (http://www.javassist.org/) org.javassist:javassist:bundle:3.24.0-GA
+    License: MPL 1.1  (http://www.mozilla.org/MPL/MPL-1.1.html)    License: LGPL 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)    License: Apache License 2.0  (http://www.apache.org/licenses/)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons CLI (http://commons.apache.org/cli/) commons-cli:commons-cli:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Codec (http://commons.apache.org/codec/) commons-codec:commons-codec:jar:1.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Configuration (http://commons.apache.org/configuration/) commons-configuration:commons-configuration:jar:1.10
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons IO (http://commons.apache.org/io/) commons-io:commons-io:jar:2.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Lang (http://commons.apache.org/lang/) commons-lang:commons-lang:jar:2.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Logging (http://commons.apache.org/logging) commons-logging:commons-logging:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Ant Core (http://ant.apache.org/) org.apache.ant:ant:jar:1.9.13
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Ant + ANTLR (http://ant.apache.org/) org.apache.ant:ant-antlr:jar:1.9.13
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Ant + JUnit (http://ant.apache.org/) org.apache.ant:ant-junit:jar:1.9.13
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Ant Launcher (http://ant.apache.org/) org.apache.ant:ant-launcher:jar:1.9.13
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache HttpClient (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpclient:jar:4.5.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache HttpCore (http://hc.apache.org/httpcomponents-core-ga) org.apache.httpcomponents:httpcore:jar:4.4.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Aether Provider (http://maven.apache.org/ref/3.3.9/maven-aether-provider/) org.apache.maven:maven-aether-provider:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Artifact (http://maven.apache.org/ref/3.3.9/maven-artifact/) org.apache.maven:maven-artifact:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Builder Support (http://maven.apache.org/ref/3.3.9/maven-builder-support/) org.apache.maven:maven-builder-support:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Model (http://maven.apache.org/ref/3.3.9/maven-model/) org.apache.maven:maven-model:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Model Builder (http://maven.apache.org/ref/3.3.9/maven-model-builder/) org.apache.maven:maven-model-builder:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Repository Metadata Model (http://maven.apache.org/ref/3.3.9/maven-repository-metadata/) org.apache.maven:maven-repository-metadata:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Settings (http://maven.apache.org/ref/3.3.9/maven-settings/) org.apache.maven:maven-settings:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Maven Settings Builder (http://maven.apache.org/ref/3.3.9/maven-settings-builder/) org.apache.maven:maven-settings-builder:jar:3.3.9
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Maven Wagon :: Providers :: File Provider (http://maven.apache.org/wagon/wagon-providers/wagon-file) org.apache.maven.wagon:wagon-file:jar:2.10
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Maven Wagon :: Providers :: Lightweight HTTP Provider (http://maven.apache.org/wagon/wagon-providers/wagon-http-lightweight) org.apache.maven.wagon:wagon-http-lightweight:jar:2.10
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Maven Wagon :: Providers :: HTTP Shared Library (http://maven.apache.org/wagon/wagon-providers/wagon-http-shared) org.apache.maven.wagon:wagon-http-shared:jar:2.10
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Maven Wagon :: API (http://maven.apache.org/wagon/wagon-provider-api) org.apache.maven.wagon:wagon-provider-api:jar:2.10
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Yetus - Audience Annotations (https://yetus.apache.org/audience-annotations) org.apache.yetus:audience-annotations:jar:0.5.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache BookKeeper :: Tests :: Common topologies for Docker based integration tests (http://bookkeeeper.apache.org/tests-parent/integration-tests-topologies) org.apache.bookkeeper.tests:integration-tests-topologies:jar:4.12.0-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache BookKeeper :: Tests :: Utility module for Arquillian based integration tests (http://bookkeeeper.apache.org/tests-parent/integration-tests-utils) org.apache.bookkeeper.tests:integration-tests-utils:jar:4.12.0-SNAPSHOT
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Compress (http://commons.apache.org/proper/commons-compress/) org.apache.commons:commons-compress:jar:1.15
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (http://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.6
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache ZooKeeper - Server (http://zookeeper.apache.org/zookeeper) org.apache.zookeeper:zookeeper:jar:3.5.7
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache ZooKeeper - Jute (http://zookeeper.apache.org/zookeeper-jute) org.apache.zookeeper:zookeeper-jute:jar:3.5.7
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Eclipse Foundation' (http://www.eclipse.org/)
+  - Aether API (http://www.eclipse.org/aether/aether-api/) org.eclipse.aether:aether-api:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether Connector Basic (http://www.eclipse.org/aether/aether-connector-basic/) org.eclipse.aether:aether-connector-basic:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether Implementation (http://www.eclipse.org/aether/aether-impl/) org.eclipse.aether:aether-impl:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether SPI (http://www.eclipse.org/aether/aether-spi/) org.eclipse.aether:aether-spi:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether Transport Wagon (http://www.eclipse.org/aether/aether-transport-wagon/) org.eclipse.aether:aether-transport-wagon:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether Utilities (http://www.eclipse.org/aether/aether-util/) org.eclipse.aether:aether-util:jar:1.0.2.v20150114
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+
+From: 'The Netty Project' (http://netty.io/)
+  - Netty/Buffer (http://netty.io/netty-buffer/) io.netty:netty-buffer:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Codec (http://netty.io/netty-codec/) io.netty:netty-codec:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Codec/HTTP (http://netty.io/netty-codec-http/) io.netty:netty-codec-http:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Codec/Socks (http://netty.io/netty-codec-socks/) io.netty:netty-codec-socks:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Common (http://netty.io/netty-common/) io.netty:netty-common:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Handler (http://netty.io/netty-handler/) io.netty:netty-handler:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Handler/Proxy (http://netty.io/netty-handler-proxy/) io.netty:netty-handler-proxy:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Resolver (http://netty.io/netty-resolver/) io.netty:netty-resolver:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Transport (http://netty.io/netty-transport/) io.netty:netty-transport:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Transport/Native/Epoll (http://netty.io/netty-transport-native-epoll/) io.netty:netty-transport-native-epoll:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Transport/Native/KQueue (http://netty.io/netty-transport-native-kqueue/) io.netty:netty-transport-native-kqueue:jar:4.1.11.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Netty/Transport/Native/Unix/Common (http://netty.io/netty-transport-native-unix-common/) io.netty:netty-transport-native-unix-common:jar:4.1.32.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+

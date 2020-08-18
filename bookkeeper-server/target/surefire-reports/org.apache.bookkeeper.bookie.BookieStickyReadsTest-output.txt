@@ -1,0 +1,953 @@
+2020-08-10 23:34:56,171 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.bookie.BookieStickyReadsTest
+2020-08-10 23:34:56,579 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:56,750 - INFO  - [Time-limited test:MetadataDrivers@105] - BookKeeper metadata driver manager initialized
+2020-08-10 23:34:56,759 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:37285/ledgers : zkServers = localhost:37285, ledgersRootPath = /ledgers.
+2020-08-10 23:34:56,771 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:56,905 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:34:56,942 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:34:56,943 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:34:56,948 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:34:57,010 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:34:57,207 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie18245743366864264947test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:37285/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie18245743366864264947test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:34:57,408 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:37285/ledgers : zkServers = localhost:37285, ledgersRootPath = /ledgers.
+2020-08-10 23:34:57,424 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:57,436 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:34:57,454 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie18245743366864264947test/current] [/tmp/bookie18245743366864264947test/current]
+2020-08-10 23:34:57,598 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:34:57,624 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie18245743366864264947test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:34:57,626 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:34:57,658 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:34:57,668 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:34:57,678 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:34:57,686 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:34:57,686 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:34:57,726 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:41769 to become writable
+2020-08-10 23:34:57,734 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 1 ms.
+2020-08-10 23:34:57,737 - INFO  - [SyncThread-13-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:34:57,742 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:34:57,743 - INFO  - [BookieJournal-41769:Journal@909] - Starting journal on /tmp/bookie18245743366864264947test/current
+2020-08-10 23:34:57,748 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:34:57,749 - INFO  - [BookieJournal-41769:JournalChannel@157] - Opening journal /tmp/bookie18245743366864264947test/current/173da4c42d4.txn
+2020-08-10 23:34:57,786 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:41769
+2020-08-10 23:34:58,041 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:41769' has been created.
+2020-08-10 23:34:58,045 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:34:58,045 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie9191192391930921319test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:37285/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie9191192391930921319test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:34:58,051 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:37285/ledgers : zkServers = localhost:37285, ledgersRootPath = /ledgers.
+2020-08-10 23:34:58,071 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:58,078 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:34:58,089 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie9191192391930921319test/current] [/tmp/bookie9191192391930921319test/current]
+2020-08-10 23:34:58,105 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:34:58,108 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie9191192391930921319test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:34:58,108 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:34:58,109 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:34:58,110 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:34:58,113 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:34:58,113 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:34:58,113 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:34:58,134 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:38037 to become writable
+2020-08-10 23:34:58,135 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:34:58,137 - INFO  - [SyncThread-23-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:34:58,141 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:34:58,144 - INFO  - [BookieJournal-38037:Journal@909] - Starting journal on /tmp/bookie9191192391930921319test/current
+2020-08-10 23:34:58,148 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:34:58,148 - INFO  - [BookieJournal-38037:JournalChannel@157] - Opening journal /tmp/bookie9191192391930921319test/current/173da4c4465.txn
+2020-08-10 23:34:58,157 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:38037
+2020-08-10 23:34:58,408 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:38037' has been created.
+2020-08-10 23:34:58,414 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:34:58,414 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie960156686031025120test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:37285/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie960156686031025120test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:34:58,422 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:37285/ledgers : zkServers = localhost:37285, ledgersRootPath = /ledgers.
+2020-08-10 23:34:58,459 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:58,466 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:34:58,477 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie960156686031025120test/current] [/tmp/bookie960156686031025120test/current]
+2020-08-10 23:34:58,490 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:34:58,493 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie960156686031025120test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:34:58,493 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:34:58,494 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:34:58,496 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:34:58,498 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:34:58,499 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:34:58,499 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:34:58,528 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:36251 to become writable
+2020-08-10 23:34:58,531 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:34:58,537 - INFO  - [SyncThread-33-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:34:58,541 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:34:58,543 - INFO  - [BookieJournal-36251:Journal@909] - Starting journal on /tmp/bookie960156686031025120test/current
+2020-08-10 23:34:58,544 - INFO  - [BookieJournal-36251:JournalChannel@157] - Opening journal /tmp/bookie960156686031025120test/current/173da4c45f1.txn
+2020-08-10 23:34:58,546 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:34:58,553 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36251
+2020-08-10 23:34:58,807 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:36251' has been created.
+2020-08-10 23:34:58,810 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase stickyReadsWithNoFailures @ metadata service zk://localhost:37285/ledgers in 2590 ms.
+2020-08-10 23:34:58,817 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:37285/ledgers : zkServers = localhost:37285, ledgersRootPath = /ledgers.
+2020-08-10 23:34:58,824 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:34:58,829 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:34:58,830 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:34:58,830 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:34:58,830 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:34:58,834 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:38037
+2020-08-10 23:34:58,835 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36251
+2020-08-10 23:34:58,835 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:41769
+2020-08-10 23:34:58,854 - WARN  - [Time-limited test:BookieWatcherImpl@251] - New ensemble: [127.0.0.1:41769, 127.0.0.1:36251, 127.0.0.1:38037] is not adhering to Placement Policy. quarantinedBookies: []
+2020-08-10 23:34:58,923 - INFO  - [Time-limited test-EventThread:LedgerCreateOp@221] - Ensemble: [127.0.0.1:41769, 127.0.0.1:36251, 127.0.0.1:38037] for ledger: 0
+2020-08-10 23:34:59,021 - INFO  - [bookie-io-18-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:34:59,021 - INFO  - [bookie-io-8-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:34:59,021 - INFO  - [bookie-io-28-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:34:59,032 - INFO  - [bookkeeper-io-40-2:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xc550580d, L:/127.0.0.1:52420 - R:127.0.0.1/127.0.0.1:36251]
+2020-08-10 23:34:59,032 - INFO  - [bookkeeper-io-40-1:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xbe2409e3, L:/127.0.0.1:43908 - R:127.0.0.1/127.0.0.1:41769]
+2020-08-10 23:34:59,036 - INFO  - [bookkeeper-io-40-1:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:41769
+2020-08-10 23:34:59,035 - INFO  - [bookkeeper-io-40-2:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:36251
+2020-08-10 23:34:59,036 - INFO  - [bookie-io-8-2:BookieRequestHandler@50] - Channel connected  [id: 0xc8b42e8d, L:/127.0.0.1:41769 - R:/127.0.0.1:43908]
+2020-08-10 23:34:59,038 - INFO  - [bookkeeper-io-40-3:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0x6c70beb6, L:/127.0.0.1:38402 - R:127.0.0.1/127.0.0.1:38037]
+2020-08-10 23:34:59,039 - INFO  - [bookkeeper-io-40-3:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:38037
+2020-08-10 23:34:59,038 - INFO  - [bookie-io-18-2:BookieRequestHandler@50] - Channel connected  [id: 0xd3d67386, L:/127.0.0.1:38037 - R:/127.0.0.1:38402]
+2020-08-10 23:34:59,036 - INFO  - [bookie-io-28-2:BookieRequestHandler@50] - Channel connected  [id: 0xefe4cda9, L:/127.0.0.1:36251 - R:/127.0.0.1:52420]
+2020-08-10 23:34:59,070 - INFO  - [bookkeeper-io-40-1:PerChannelBookieClient$1@471] - connection [id: 0xbe2409e3, L:/127.0.0.1:43908 - R:127.0.0.1/127.0.0.1:41769] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:34:59,070 - INFO  - [bookkeeper-io-40-3:PerChannelBookieClient$1@471] - connection [id: 0x6c70beb6, L:/127.0.0.1:38402 - R:127.0.0.1/127.0.0.1:38037] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:34:59,070 - INFO  - [bookkeeper-io-40-2:PerChannelBookieClient$1@471] - connection [id: 0xc550580d, L:/127.0.0.1:52420 - R:127.0.0.1/127.0.0.1:36251] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:34:59,734 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:38037
+2020-08-10 23:34:59,741 - INFO  - [bookie-io-18-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xd3d67386, L:/127.0.0.1:38037 ! R:/127.0.0.1:38402]
+2020-08-10 23:34:59,741 - INFO  - [bookkeeper-io-40-3:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0x6c70beb6, L:/127.0.0.1:38402 ! R:127.0.0.1/127.0.0.1:38037]
+2020-08-10 23:34:59,741 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:36251
+2020-08-10 23:34:59,743 - INFO  - [bookkeeper-io-40-2:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xc550580d, L:/127.0.0.1:52420 ! R:127.0.0.1/127.0.0.1:36251]
+2020-08-10 23:34:59,743 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:41769
+2020-08-10 23:34:59,743 - INFO  - [bookie-io-28-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xefe4cda9, L:/127.0.0.1:36251 ! R:/127.0.0.1:52420]
+2020-08-10 23:34:59,745 - INFO  - [bookkeeper-io-40-1:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xbe2409e3, L:/127.0.0.1:43908 ! R:127.0.0.1/127.0.0.1:41769]
+2020-08-10 23:34:59,746 - INFO  - [bookie-io-8-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xc8b42e8d, L:/127.0.0.1:41769 ! R:/127.0.0.1:43908]
+2020-08-10 23:34:59,874 - INFO  - [Time-limited test:BookKeeperClusterTestCase@185] - TearDown
+2020-08-10 23:34:59,991 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:34:59,992 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:00,015 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-41769 with exitCode 0
+2020-08-10 23:35:00,016 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:00,016 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:00,016 - INFO  - [SyncThread-13-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:00,021 - INFO  - [SyncThread-13-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie18245743366864264947test/current/0.log for logId 0.
+2020-08-10 23:35:00,025 - INFO  - [pool-9-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie18245743366864264947test/current/1.log for logId 1.
+2020-08-10 23:35:00,035 - INFO  - [SyncThread-13-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095297748 , logFileOffset - 5632]}.
+2020-08-10 23:35:00,038 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:00,041 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:00,041 - INFO  - [BookieJournal-41769:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:00,042 - INFO  - [BookieJournal-41769:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:00,042 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:00,042 - INFO  - [Bookie-41769:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:00,044 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:00,044 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:00,044 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:00,044 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:00,044 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:00,049 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:00,063 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:00,064 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:00,180 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:00,180 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:00,196 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-38037 with exitCode 0
+2020-08-10 23:35:00,196 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:00,196 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:00,197 - INFO  - [SyncThread-23-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:00,198 - INFO  - [SyncThread-23-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie9191192391930921319test/current/0.log for logId 0.
+2020-08-10 23:35:00,201 - INFO  - [pool-16-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie9191192391930921319test/current/1.log for logId 1.
+2020-08-10 23:35:00,208 - INFO  - [SyncThread-23-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095298149 , logFileOffset - 6144]}.
+2020-08-10 23:35:00,211 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:00,212 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:00,213 - INFO  - [BookieJournal-38037:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:00,213 - INFO  - [BookieJournal-38037:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:00,214 - INFO  - [Bookie-38037:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:00,214 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:00,215 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:00,215 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:00,215 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:00,215 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:00,215 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:00,218 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:00,222 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:00,222 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:00,336 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:00,337 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:00,351 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-36251 with exitCode 0
+2020-08-10 23:35:00,352 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:00,352 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:00,352 - INFO  - [SyncThread-33-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:00,353 - INFO  - [SyncThread-33-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie960156686031025120test/current/0.log for logId 0.
+2020-08-10 23:35:00,354 - INFO  - [pool-23-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie960156686031025120test/current/1.log for logId 1.
+2020-08-10 23:35:00,362 - INFO  - [SyncThread-33-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095298545 , logFileOffset - 5632]}.
+2020-08-10 23:35:00,366 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:00,366 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:00,366 - INFO  - [BookieJournal-36251:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:00,367 - INFO  - [BookieJournal-36251:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:00,367 - INFO  - [Bookie-36251:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:00,367 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:00,368 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:00,368 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:00,368 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:00,368 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:00,368 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:00,371 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:00,374 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:00,374 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:00,581 - INFO  - [BookieDeathWatcher-36251:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:00,582 - INFO  - [BookieDeathWatcher-36251:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-36251
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:00,584 - INFO  - [BookieDeathWatcher-36251:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:00,585 - INFO  - [BookieDeathWatcher-36251:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:00,612 - INFO  - [Time-limited test:BookKeeperClusterTestCase@208] - Tearing down test stickyReadsWithNoFailures in 737 ms.
+2020-08-10 23:35:00,617 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.bookie.BookieStickyReadsTest
+2020-08-10 23:35:00,640 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:00,661 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:46601/ledgers : zkServers = localhost:46601, ledgersRootPath = /ledgers.
+2020-08-10 23:35:00,670 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:00,675 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:00,676 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:00,676 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:00,676 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:00,686 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:00,687 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie17899577927517307144test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:46601/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie17899577927517307144test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:00,693 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:46601/ledgers : zkServers = localhost:46601, ledgersRootPath = /ledgers.
+2020-08-10 23:35:00,700 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:00,704 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:00,714 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie17899577927517307144test/current] [/tmp/bookie17899577927517307144test/current]
+2020-08-10 23:35:00,732 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:00,735 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie17899577927517307144test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:00,735 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:00,737 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:00,737 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:00,739 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:00,739 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:00,740 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:00,761 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:37291 to become writable
+2020-08-10 23:35:00,764 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:00,766 - INFO  - [SyncThread-55-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:00,771 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:00,772 - INFO  - [BookieJournal-37291:Journal@909] - Starting journal on /tmp/bookie17899577927517307144test/current
+2020-08-10 23:35:00,773 - INFO  - [BookieJournal-37291:JournalChannel@157] - Opening journal /tmp/bookie17899577927517307144test/current/173da4c4ea6.txn
+2020-08-10 23:35:00,774 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:00,783 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:37291
+2020-08-10 23:35:00,793 - INFO  - [BookieDeathWatcher-41769:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:00,793 - INFO  - [BookieDeathWatcher-41769:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-41769
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:00,794 - INFO  - [BookieDeathWatcher-41769:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:00,794 - INFO  - [BookieDeathWatcher-41769:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:01,032 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:37291' has been created.
+2020-08-10 23:35:01,034 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:01,035 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie11314088557711179580test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:46601/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie11314088557711179580test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:01,040 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:46601/ledgers : zkServers = localhost:46601, ledgersRootPath = /ledgers.
+2020-08-10 23:35:01,052 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:01,060 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:01,069 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie11314088557711179580test/current] [/tmp/bookie11314088557711179580test/current]
+2020-08-10 23:35:01,079 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:01,081 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie11314088557711179580test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:01,081 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:01,082 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:01,083 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:01,085 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:01,085 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:01,085 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:01,111 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:36841 to become writable
+2020-08-10 23:35:01,113 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 1 ms.
+2020-08-10 23:35:01,116 - INFO  - [SyncThread-65-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:01,119 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:01,123 - INFO  - [BookieJournal-36841:Journal@909] - Starting journal on /tmp/bookie11314088557711179580test/current
+2020-08-10 23:35:01,125 - INFO  - [BookieJournal-36841:JournalChannel@157] - Opening journal /tmp/bookie11314088557711179580test/current/173da4c5005.txn
+2020-08-10 23:35:01,125 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:01,133 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36841
+2020-08-10 23:35:01,161 - INFO  - [BookieDeathWatcher-38037:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:01,161 - INFO  - [BookieDeathWatcher-38037:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-38037
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:01,162 - INFO  - [BookieDeathWatcher-38037:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:01,162 - INFO  - [BookieDeathWatcher-38037:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:01,386 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:36841' has been created.
+2020-08-10 23:35:01,389 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:01,390 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie15156535092294587065test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:46601/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie15156535092294587065test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:01,394 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:46601/ledgers : zkServers = localhost:46601, ledgersRootPath = /ledgers.
+2020-08-10 23:35:01,401 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:01,406 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:01,418 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie15156535092294587065test/current] [/tmp/bookie15156535092294587065test/current]
+2020-08-10 23:35:01,431 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:01,434 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie15156535092294587065test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:01,434 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:01,434 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:01,435 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:01,436 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:01,436 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:01,437 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:01,450 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:45231 to become writable
+2020-08-10 23:35:01,451 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:01,453 - INFO  - [SyncThread-75-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:01,458 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:01,460 - INFO  - [BookieJournal-45231:Journal@909] - Starting journal on /tmp/bookie15156535092294587065test/current
+2020-08-10 23:35:01,467 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:01,467 - INFO  - [BookieJournal-45231:JournalChannel@157] - Opening journal /tmp/bookie15156535092294587065test/current/173da4c515c.txn
+2020-08-10 23:35:01,477 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:45231
+2020-08-10 23:35:01,728 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:45231' has been created.
+2020-08-10 23:35:01,729 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase testNormalReads @ metadata service zk://localhost:46601/ledgers in 1111 ms.
+2020-08-10 23:35:01,734 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:46601/ledgers : zkServers = localhost:46601, ledgersRootPath = /ledgers.
+2020-08-10 23:35:01,741 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:01,745 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:01,746 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:01,746 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:01,746 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:01,749 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:37291
+2020-08-10 23:35:01,750 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:36841
+2020-08-10 23:35:01,750 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:45231
+2020-08-10 23:35:01,753 - WARN  - [Time-limited test:BookieWatcherImpl@251] - New ensemble: [127.0.0.1:45231, 127.0.0.1:36841, 127.0.0.1:37291] is not adhering to Placement Policy. quarantinedBookies: []
+2020-08-10 23:35:01,782 - INFO  - [Time-limited test-EventThread:LedgerCreateOp@221] - Ensemble: [127.0.0.1:45231, 127.0.0.1:36841, 127.0.0.1:37291] for ledger: 0
+2020-08-10 23:35:01,807 - INFO  - [bookkeeper-io-82-3:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0x1407b169, L:/127.0.0.1:47862 - R:127.0.0.1/127.0.0.1:37291]
+2020-08-10 23:35:01,807 - INFO  - [bookkeeper-io-82-3:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:37291
+2020-08-10 23:35:01,805 - INFO  - [bookkeeper-io-82-1:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0x3f5407e5, L:/127.0.0.1:39108 - R:127.0.0.1/127.0.0.1:45231]
+2020-08-10 23:35:01,807 - INFO  - [bookkeeper-io-82-1:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:45231
+2020-08-10 23:35:01,807 - INFO  - [bookkeeper-io-82-3:PerChannelBookieClient$1@471] - connection [id: 0x1407b169, L:/127.0.0.1:47862 - R:127.0.0.1/127.0.0.1:37291] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:01,822 - INFO  - [bookie-io-70-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:01,822 - INFO  - [bookie-io-60-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:01,823 - INFO  - [bookie-io-60-2:BookieRequestHandler@50] - Channel connected  [id: 0x030d4d6c, L:/127.0.0.1:36841 - R:/127.0.0.1:35404]
+2020-08-10 23:35:01,823 - INFO  - [bookie-io-70-2:BookieRequestHandler@50] - Channel connected  [id: 0x52029093, L:/127.0.0.1:45231 - R:/127.0.0.1:39108]
+2020-08-10 23:35:01,826 - INFO  - [bookkeeper-io-82-2:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xba391631, L:/127.0.0.1:35404 - R:127.0.0.1/127.0.0.1:36841]
+2020-08-10 23:35:01,829 - INFO  - [bookkeeper-io-82-2:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:36841
+2020-08-10 23:35:01,826 - INFO  - [bookkeeper-io-82-1:PerChannelBookieClient$1@471] - connection [id: 0x3f5407e5, L:/127.0.0.1:39108 - R:127.0.0.1/127.0.0.1:45231] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:01,829 - INFO  - [bookkeeper-io-82-2:PerChannelBookieClient$1@471] - connection [id: 0xba391631, L:/127.0.0.1:35404 - R:127.0.0.1/127.0.0.1:36841] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:01,830 - INFO  - [bookie-io-50-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:01,830 - INFO  - [bookie-io-50-2:BookieRequestHandler@50] - Channel connected  [id: 0xd808069b, L:/127.0.0.1:37291 - R:/127.0.0.1:47862]
+2020-08-10 23:35:01,950 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:37291
+2020-08-10 23:35:01,950 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:36841
+2020-08-10 23:35:01,951 - INFO  - [bookie-io-50-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xd808069b, L:/127.0.0.1:37291 ! R:/127.0.0.1:47862]
+2020-08-10 23:35:01,950 - INFO  - [bookkeeper-io-82-3:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0x1407b169, L:/127.0.0.1:47862 ! R:127.0.0.1/127.0.0.1:37291]
+2020-08-10 23:35:01,951 - INFO  - [bookkeeper-io-82-2:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xba391631, L:/127.0.0.1:35404 ! R:127.0.0.1/127.0.0.1:36841]
+2020-08-10 23:35:01,952 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:45231
+2020-08-10 23:35:01,953 - INFO  - [bookie-io-60-2:BookieRequestHandler@61] - Channels disconnected: [id: 0x030d4d6c, L:/127.0.0.1:36841 ! R:/127.0.0.1:35404]
+2020-08-10 23:35:01,953 - INFO  - [bookkeeper-io-82-1:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0x3f5407e5, L:/127.0.0.1:39108 ! R:127.0.0.1/127.0.0.1:45231]
+2020-08-10 23:35:01,954 - INFO  - [bookie-io-70-2:BookieRequestHandler@61] - Channels disconnected: [id: 0x52029093, L:/127.0.0.1:45231 ! R:/127.0.0.1:39108]
+2020-08-10 23:35:02,074 - INFO  - [Time-limited test:BookKeeperClusterTestCase@185] - TearDown
+2020-08-10 23:35:02,185 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:02,186 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:02,192 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-37291 with exitCode 0
+2020-08-10 23:35:02,192 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:02,192 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:02,193 - INFO  - [SyncThread-55-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:02,194 - INFO  - [SyncThread-55-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie17899577927517307144test/current/0.log for logId 0.
+2020-08-10 23:35:02,197 - INFO  - [pool-38-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie17899577927517307144test/current/1.log for logId 1.
+2020-08-10 23:35:02,203 - INFO  - [SyncThread-55-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095300774 , logFileOffset - 5632]}.
+2020-08-10 23:35:02,207 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:02,207 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:02,208 - INFO  - [BookieJournal-37291:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:02,208 - INFO  - [BookieJournal-37291:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:02,208 - INFO  - [Bookie-37291:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:02,208 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:02,209 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:02,209 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:02,209 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:02,209 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:02,210 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:02,212 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:02,215 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:02,216 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:02,325 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:02,325 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:02,329 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-36841 with exitCode 0
+2020-08-10 23:35:02,329 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:02,329 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:02,329 - INFO  - [SyncThread-65-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:02,331 - INFO  - [SyncThread-65-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie11314088557711179580test/current/0.log for logId 0.
+2020-08-10 23:35:02,334 - INFO  - [pool-45-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie11314088557711179580test/current/1.log for logId 1.
+2020-08-10 23:35:02,347 - INFO  - [SyncThread-65-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095301125 , logFileOffset - 5632]}.
+2020-08-10 23:35:02,351 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:02,352 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:02,352 - INFO  - [BookieJournal-36841:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:02,352 - INFO  - [BookieJournal-36841:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:02,353 - INFO  - [Bookie-36841:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:02,353 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:02,354 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:02,354 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:02,354 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:02,354 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:02,354 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:02,358 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:02,362 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:02,362 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:02,472 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:02,473 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:02,478 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-45231 with exitCode 0
+2020-08-10 23:35:02,478 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:02,478 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:02,478 - INFO  - [SyncThread-75-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:02,479 - INFO  - [SyncThread-75-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15156535092294587065test/current/0.log for logId 0.
+2020-08-10 23:35:02,482 - INFO  - [pool-52-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie15156535092294587065test/current/1.log for logId 1.
+2020-08-10 23:35:02,493 - INFO  - [SyncThread-75-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095301468 , logFileOffset - 5632]}.
+2020-08-10 23:35:02,497 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:02,497 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:02,498 - INFO  - [BookieJournal-45231:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:02,498 - INFO  - [BookieJournal-45231:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:02,498 - INFO  - [Bookie-45231:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:02,498 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:02,499 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:02,499 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:02,499 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:02,499 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:02,500 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:02,503 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:02,505 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:02,505 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:02,735 - INFO  - [Time-limited test:BookKeeperClusterTestCase@208] - Tearing down test testNormalReads in 660 ms.
+2020-08-10 23:35:02,737 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.bookie.BookieStickyReadsTest
+2020-08-10 23:35:02,755 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:02,766 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:35737/ledgers : zkServers = localhost:35737, ledgersRootPath = /ledgers.
+2020-08-10 23:35:02,778 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:02,782 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:02,783 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:02,783 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:02,783 - INFO  - [BookieDeathWatcher-37291:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:02,783 - INFO  - [BookieDeathWatcher-37291:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-37291
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:02,784 - INFO  - [BookieDeathWatcher-37291:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:02,784 - INFO  - [BookieDeathWatcher-37291:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:02,783 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:02,792 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:02,793 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie4191785689533674008test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:35737/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie4191785689533674008test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:02,801 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:35737/ledgers : zkServers = localhost:35737, ledgersRootPath = /ledgers.
+2020-08-10 23:35:02,807 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:02,809 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:02,818 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie4191785689533674008test/current] [/tmp/bookie4191785689533674008test/current]
+2020-08-10 23:35:02,832 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:02,835 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie4191785689533674008test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:02,835 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:02,835 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:02,836 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:02,838 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:02,839 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:02,840 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:02,855 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:39453 to become writable
+2020-08-10 23:35:02,859 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:02,861 - INFO  - [SyncThread-97-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:02,864 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:02,866 - INFO  - [BookieJournal-39453:Journal@909] - Starting journal on /tmp/bookie4191785689533674008test/current
+2020-08-10 23:35:02,867 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:02,867 - INFO  - [BookieJournal-39453:JournalChannel@157] - Opening journal /tmp/bookie4191785689533674008test/current/173da4c56d4.txn
+2020-08-10 23:35:02,875 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:39453
+2020-08-10 23:35:03,127 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:39453' has been created.
+2020-08-10 23:35:03,131 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:03,131 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie12413473041295997229test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:35737/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie12413473041295997229test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:03,136 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:35737/ledgers : zkServers = localhost:35737, ledgersRootPath = /ledgers.
+2020-08-10 23:35:03,140 - INFO  - [BookieDeathWatcher-36841:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:03,141 - INFO  - [BookieDeathWatcher-36841:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-36841
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:03,141 - INFO  - [BookieDeathWatcher-36841:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:03,141 - INFO  - [BookieDeathWatcher-36841:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:03,145 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:03,149 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:03,158 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie12413473041295997229test/current] [/tmp/bookie12413473041295997229test/current]
+2020-08-10 23:35:03,169 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:03,171 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie12413473041295997229test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:03,171 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:03,171 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:03,172 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:03,173 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:03,174 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:03,174 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:03,191 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:39801 to become writable
+2020-08-10 23:35:03,192 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 1 ms.
+2020-08-10 23:35:03,193 - INFO  - [SyncThread-107-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:03,197 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:03,199 - INFO  - [BookieJournal-39801:Journal@909] - Starting journal on /tmp/bookie12413473041295997229test/current
+2020-08-10 23:35:03,200 - INFO  - [BookieJournal-39801:JournalChannel@157] - Opening journal /tmp/bookie12413473041295997229test/current/173da4c5821.txn
+2020-08-10 23:35:03,201 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:03,207 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:39801
+2020-08-10 23:35:03,461 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:39801' has been created.
+2020-08-10 23:35:03,464 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:03,465 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie5245618382478183947test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:35737/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie5245618382478183947test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:03,469 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:35737/ledgers : zkServers = localhost:35737, ledgersRootPath = /ledgers.
+2020-08-10 23:35:03,477 - INFO  - [BookieDeathWatcher-45231:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:03,478 - INFO  - [BookieDeathWatcher-45231:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-45231
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:03,478 - INFO  - [BookieDeathWatcher-45231:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:03,478 - INFO  - [BookieDeathWatcher-45231:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:03,479 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:03,484 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:03,496 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie5245618382478183947test/current] [/tmp/bookie5245618382478183947test/current]
+2020-08-10 23:35:03,506 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:03,508 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie5245618382478183947test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:03,508 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:03,509 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:03,509 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:03,511 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:03,511 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:03,511 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:03,524 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:43913 to become writable
+2020-08-10 23:35:03,525 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:03,526 - INFO  - [SyncThread-117-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:03,530 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:03,532 - INFO  - [BookieJournal-43913:Journal@909] - Starting journal on /tmp/bookie5245618382478183947test/current
+2020-08-10 23:35:03,533 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:03,533 - INFO  - [BookieJournal-43913:JournalChannel@157] - Opening journal /tmp/bookie5245618382478183947test/current/173da4c596e.txn
+2020-08-10 23:35:03,538 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:43913
+2020-08-10 23:35:03,789 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:43913' has been created.
+2020-08-10 23:35:03,790 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase stickyReadsWithFailures @ metadata service zk://localhost:35737/ledgers in 1052 ms.
+2020-08-10 23:35:03,794 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:35737/ledgers : zkServers = localhost:35737, ledgersRootPath = /ledgers.
+2020-08-10 23:35:03,801 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:03,805 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:03,806 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:03,806 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:03,806 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:03,809 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:39801
+2020-08-10 23:35:03,809 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:39453
+2020-08-10 23:35:03,810 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:43913
+2020-08-10 23:35:03,812 - WARN  - [Time-limited test:BookieWatcherImpl@251] - New ensemble: [127.0.0.1:39801, 127.0.0.1:43913, 127.0.0.1:39453] is not adhering to Placement Policy. quarantinedBookies: []
+2020-08-10 23:35:03,841 - INFO  - [Time-limited test-EventThread:LedgerCreateOp@221] - Ensemble: [127.0.0.1:39801, 127.0.0.1:43913, 127.0.0.1:39453] for ledger: 0
+2020-08-10 23:35:03,844 - INFO  - [bookkeeper-io-124-1:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xab30f206, L:/127.0.0.1:50562 - R:127.0.0.1/127.0.0.1:39801]
+2020-08-10 23:35:03,845 - INFO  - [bookkeeper-io-124-1:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:39801
+2020-08-10 23:35:03,845 - INFO  - [bookkeeper-io-124-1:PerChannelBookieClient$1@471] - connection [id: 0xab30f206, L:/127.0.0.1:50562 - R:127.0.0.1/127.0.0.1:39801] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:03,858 - INFO  - [bookie-io-102-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:03,861 - INFO  - [bookie-io-102-2:BookieRequestHandler@50] - Channel connected  [id: 0xb34441c1, L:/127.0.0.1:39801 - R:/127.0.0.1:50562]
+2020-08-10 23:35:03,861 - INFO  - [bookkeeper-io-124-2:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xce786e99, L:/127.0.0.1:42886 - R:127.0.0.1/127.0.0.1:43913]
+2020-08-10 23:35:03,861 - INFO  - [bookkeeper-io-124-2:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:43913
+2020-08-10 23:35:03,862 - INFO  - [bookkeeper-io-124-2:PerChannelBookieClient$1@471] - connection [id: 0xce786e99, L:/127.0.0.1:42886 - R:127.0.0.1/127.0.0.1:43913] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:03,868 - INFO  - [bookkeeper-io-124-3:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xef841c57, L:/127.0.0.1:57440 - R:127.0.0.1/127.0.0.1:39453]
+2020-08-10 23:35:03,869 - INFO  - [bookkeeper-io-124-3:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:39453
+2020-08-10 23:35:03,870 - INFO  - [bookkeeper-io-124-3:PerChannelBookieClient$1@471] - connection [id: 0xef841c57, L:/127.0.0.1:57440 - R:127.0.0.1/127.0.0.1:39453] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:03,869 - INFO  - [bookie-io-92-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:03,871 - INFO  - [bookie-io-92-2:BookieRequestHandler@50] - Channel connected  [id: 0x5540944c, L:/127.0.0.1:39453 - R:/127.0.0.1:57440]
+2020-08-10 23:35:03,876 - INFO  - [bookie-io-112-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:03,876 - INFO  - [bookie-io-112-2:BookieRequestHandler@50] - Channel connected  [id: 0xb7a9a7c8, L:/127.0.0.1:43913 - R:/127.0.0.1:42886]
+2020-08-10 23:35:03,970 - INFO  - [Time-limited test:BookieStickyReadsTest@146] - Bookie 0 --- requests: 1
+2020-08-10 23:35:03,971 - INFO  - [Time-limited test:BookieStickyReadsTest@146] - Bookie 1 --- requests: 0
+2020-08-10 23:35:03,972 - INFO  - [Time-limited test:BookieStickyReadsTest@146] - Bookie 2 --- requests: 0
+2020-08-10 23:35:09,809 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:PerChannelBookieClient@1004] - Timed-out 1 operations to channel [id: 0xef841c57, L:/127.0.0.1:57440 - R:127.0.0.1/127.0.0.1:39453] for 127.0.0.1:39453
+2020-08-10 23:35:09,809 - INFO  - [BookKeeperClientWorker-OrderedExecutor-0-0:PendingReadOp$LedgerEntryRequest@213] - Error: Bookie operation timeout while reading L0 E0 from bookie: 127.0.0.1:39453
+2020-08-10 23:35:10,014 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:39801
+2020-08-10 23:35:10,016 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:39453
+2020-08-10 23:35:10,016 - INFO  - [bookkeeper-io-124-1:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xab30f206, L:/127.0.0.1:50562 ! R:127.0.0.1/127.0.0.1:39801]
+2020-08-10 23:35:10,019 - INFO  - [BookKeeperClientWorker-OrderedExecutor-0-0:PendingReadOp$LedgerEntryRequest@213] - Error: BookKeeper client is closed while reading L0 E1 from bookie: 127.0.0.1:39453
+2020-08-10 23:35:10,017 - INFO  - [bookie-io-102-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xb34441c1, L:/127.0.0.1:39801 ! R:/127.0.0.1:50562]
+2020-08-10 23:35:10,020 - INFO  - [BookKeeperClientWorker-OrderedExecutor-0-0:PendingReadOp$LedgerEntryRequest@213] - Error: BookKeeper client is closed while reading L0 E2 from bookie: 127.0.0.1:39453
+2020-08-10 23:35:10,020 - INFO  - [bookkeeper-io-124-3:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xef841c57, L:/127.0.0.1:57440 ! R:127.0.0.1/127.0.0.1:39453]
+2020-08-10 23:35:10,020 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:43913
+2020-08-10 23:35:10,021 - INFO  - [bookkeeper-io-124-2:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xce786e99, L:/127.0.0.1:42886 ! R:127.0.0.1/127.0.0.1:43913]
+2020-08-10 23:35:10,021 - INFO  - [bookie-io-112-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xb7a9a7c8, L:/127.0.0.1:43913 ! R:/127.0.0.1:42886]
+2020-08-10 23:35:12,112 - INFO  - [Time-limited test:BookKeeperClusterTestCase@185] - TearDown
+2020-08-10 23:35:12,222 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:12,222 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:12,226 - INFO  - [bookie-io-92-2:BookieRequestHandler@61] - Channels disconnected: [id: 0x5540944c, L:/127.0.0.1:39453 ! R:/127.0.0.1:57440]
+2020-08-10 23:35:12,232 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-39453 with exitCode 0
+2020-08-10 23:35:12,232 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:12,232 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:12,233 - INFO  - [SyncThread-97-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:12,237 - INFO  - [SyncThread-97-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie4191785689533674008test/current/0.log for logId 0.
+2020-08-10 23:35:12,240 - INFO  - [pool-67-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie4191785689533674008test/current/1.log for logId 1.
+2020-08-10 23:35:12,255 - INFO  - [SyncThread-97-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095302868 , logFileOffset - 5632]}.
+2020-08-10 23:35:12,259 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:12,260 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:12,260 - INFO  - [BookieJournal-39453:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:12,261 - INFO  - [BookieJournal-39453:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:12,261 - INFO  - [Bookie-39453:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:12,261 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:12,261 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:12,262 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:12,262 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:12,262 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:12,262 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:12,266 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:12,268 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:12,269 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:12,386 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:12,388 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:12,395 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-39801 with exitCode 0
+2020-08-10 23:35:12,395 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:12,395 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:12,395 - INFO  - [SyncThread-107-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:12,397 - INFO  - [SyncThread-107-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie12413473041295997229test/current/0.log for logId 0.
+2020-08-10 23:35:12,399 - INFO  - [pool-74-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie12413473041295997229test/current/1.log for logId 1.
+2020-08-10 23:35:12,408 - INFO  - [SyncThread-107-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095303201 , logFileOffset - 5632]}.
+2020-08-10 23:35:12,411 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:12,411 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:12,412 - INFO  - [BookieJournal-39801:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:12,413 - INFO  - [BookieJournal-39801:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:12,413 - INFO  - [Bookie-39801:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:12,413 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:12,414 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:12,414 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:12,414 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:12,414 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:12,414 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:12,417 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:12,419 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:12,419 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:12,528 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:12,529 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:12,535 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-43913 with exitCode 0
+2020-08-10 23:35:12,535 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:12,535 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:12,536 - INFO  - [SyncThread-117-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:12,537 - INFO  - [SyncThread-117-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie5245618382478183947test/current/0.log for logId 0.
+2020-08-10 23:35:12,548 - INFO  - [pool-81-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie5245618382478183947test/current/1.log for logId 1.
+2020-08-10 23:35:12,562 - INFO  - [SyncThread-117-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095303534 , logFileOffset - 5632]}.
+2020-08-10 23:35:12,566 - INFO  - [Time-limited test:Journal@1159] - Shutting down Journal
+2020-08-10 23:35:12,567 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@533] - ForceWrite thread interrupted
+2020-08-10 23:35:12,567 - INFO  - [BookieJournal-43913:Journal@1135] - Journal exits when shutting down
+2020-08-10 23:35:12,567 - INFO  - [BookieJournal-43913:Journal@1144] - Journal exited loop!
+2020-08-10 23:35:12,567 - INFO  - [Bookie-43913:Bookie@1130] - Journal thread(s) quit.
+2020-08-10 23:35:12,567 - INFO  - [Time-limited test:Journal@1170] - Finished Shutting down Journal thread
+2020-08-10 23:35:12,568 - INFO  - [Time-limited test:InterleavedLedgerStorage@286] - Shutting down InterleavedLedgerStorage
+2020-08-10 23:35:12,568 - INFO  - [Time-limited test:InterleavedLedgerStorage@287] - Shutting down GC thread
+2020-08-10 23:35:12,568 - INFO  - [Time-limited test:GarbageCollectorThread@474] - Shutting down GarbageCollectorThread
+2020-08-10 23:35:12,569 - INFO  - [Time-limited test:InterleavedLedgerStorage@289] - Shutting down entry logger
+2020-08-10 23:35:12,569 - INFO  - [Time-limited test:EntryLogger@1161] - Stopping EntryLogger
+2020-08-10 23:35:12,572 - INFO  - [Time-limited test:EntryLoggerAllocator@222] - Stopped entry logger preallocator.
+2020-08-10 23:35:12,574 - INFO  - [Time-limited test:InterleavedLedgerStorage@296] - Complete shutting down Ledger Storage
+2020-08-10 23:35:12,574 - INFO  - [Time-limited test:LedgerDirsMonitor@202] - Shutting down LedgerDirsMonitor
+2020-08-10 23:35:12,803 - INFO  - [Time-limited test:BookKeeperClusterTestCase@208] - Tearing down test stickyReadsWithFailures in 690 ms.
+2020-08-10 23:35:12,805 - INFO  - [Time-limited test:BookKeeperClusterTestCase@152] - Setting up test class org.apache.bookkeeper.bookie.BookieStickyReadsTest
+2020-08-10 23:35:12,831 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:12,842 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:33961/ledgers : zkServers = localhost:33961, ledgersRootPath = /ledgers.
+2020-08-10 23:35:12,849 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:12,855 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:12,856 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:12,856 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:12,856 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:12,865 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:12,866 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie16434245982678997181test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:33961/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie16434245982678997181test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:12,873 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:33961/ledgers : zkServers = localhost:33961, ledgersRootPath = /ledgers.
+2020-08-10 23:35:12,878 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:12,880 - INFO  - [BookieDeathWatcher-39453:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:12,880 - INFO  - [BookieDeathWatcher-39453:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-39453
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:12,880 - INFO  - [BookieDeathWatcher-39453:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:12,880 - INFO  - [BookieDeathWatcher-39453:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:12,888 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:12,895 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie16434245982678997181test/current] [/tmp/bookie16434245982678997181test/current]
+2020-08-10 23:35:12,907 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:12,909 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie16434245982678997181test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:12,910 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:12,910 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:12,910 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:12,911 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:12,912 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:12,912 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:12,927 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:43145 to become writable
+2020-08-10 23:35:12,928 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:12,930 - INFO  - [SyncThread-139-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:12,933 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:12,935 - INFO  - [BookieJournal-43145:Journal@909] - Starting journal on /tmp/bookie16434245982678997181test/current
+2020-08-10 23:35:12,937 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:12,937 - INFO  - [BookieJournal-43145:JournalChannel@157] - Opening journal /tmp/bookie16434245982678997181test/current/173da4c7e2a.txn
+2020-08-10 23:35:12,946 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:43145
+2020-08-10 23:35:13,193 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:43145' has been created.
+2020-08-10 23:35:13,196 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:13,197 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie7645747812702183399test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:33961/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie7645747812702183399test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:13,203 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:33961/ledgers : zkServers = localhost:33961, ledgersRootPath = /ledgers.
+2020-08-10 23:35:13,209 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:13,210 - INFO  - [BookieDeathWatcher-39801:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:13,211 - INFO  - [BookieDeathWatcher-39801:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-39801
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:13,211 - INFO  - [BookieDeathWatcher-39801:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:13,211 - INFO  - [BookieDeathWatcher-39801:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:13,213 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:13,223 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie7645747812702183399test/current] [/tmp/bookie7645747812702183399test/current]
+2020-08-10 23:35:13,231 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:13,233 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie7645747812702183399test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:13,233 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:13,233 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:13,234 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:13,237 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:13,237 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:13,237 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:13,251 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:37729 to become writable
+2020-08-10 23:35:13,252 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:13,253 - INFO  - [SyncThread-149-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:13,257 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:13,258 - INFO  - [BookieJournal-37729:Journal@909] - Starting journal on /tmp/bookie7645747812702183399test/current
+2020-08-10 23:35:13,258 - INFO  - [BookieJournal-37729:JournalChannel@157] - Opening journal /tmp/bookie7645747812702183399test/current/173da4c7f6b.txn
+2020-08-10 23:35:13,259 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:13,267 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:37729
+2020-08-10 23:35:13,521 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:37729' has been created.
+2020-08-10 23:35:13,524 - INFO  - [Time-limited test:BookKeeperClusterTestCase@636] - Starting new bookie on port: 0
+2020-08-10 23:35:13,525 - INFO  - [Time-limited test:BookieServer@99] - {
+  "diskUsageWarnThreshold" : "0.99",
+  "dbStorage_readAheadCacheMaxSizeMb" : "4",
+  "diskUsageThreshold" : "0.999",
+  "gcWaitTime" : "1000",
+  "journalFormatVersionToWrite" : "5",
+  "allocatorPoolingPolicy" : "UnpooledHeap",
+  "dbStorage_writeCacheMaxSizeMb" : "4",
+  "bookiePort" : "0",
+  "allowEphemeralPorts" : "true",
+  "ledgerDirectories" : "/tmp/bookie15561923961182956936test",
+  "listeningInterface" : "lo",
+  "metadataServiceUri" : "zk://localhost:33961/ledgers",
+  "journalFlushWhenQueueEmpty" : "true",
+  "enableTaskExecutionStats" : "true",
+  "journalDirectories" : "/tmp/bookie15561923961182956936test",
+  "allowLoopback" : "true",
+  "metastoreImplClass" : "org.apache.bookkeeper.metastore.InMemoryMetaStore"
+}
+2020-08-10 23:35:13,531 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:33961/ledgers : zkServers = localhost:33961, ledgersRootPath = /ledgers.
+2020-08-10 23:35:13,538 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:13,542 - INFO  - [Time-limited test:ZKRegistrationManager@425] - INSTANCEID not exists in zookeeper. Not considering it for data verification
+2020-08-10 23:35:13,543 - INFO  - [BookieDeathWatcher-43913:BookieServer$DeathWatcher@285] - BookieDeathWatcher noticed the bookie is not running any more, exiting the watch loop!
+2020-08-10 23:35:13,543 - INFO  - [BookieDeathWatcher-43913:BookieServer$DeathWatcher@269] - BookieDeathWatcher exited loop due to uncaught exception from thread BookieDeathWatcher-43913
+java.lang.RuntimeException: Bookie is not running any more
+	at org.apache.bookkeeper.proto.BookieServer$DeathWatcher.run(BookieServer.java:289)
+2020-08-10 23:35:13,543 - INFO  - [BookieDeathWatcher-43913:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:13,543 - INFO  - [BookieDeathWatcher-43913:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:13,551 - INFO  - [Time-limited test:Bookie@390] - Stamping new cookies on all dirs [/tmp/bookie15561923961182956936test/current] [/tmp/bookie15561923961182956936test/current]
+2020-08-10 23:35:13,566 - INFO  - [Time-limited test:Bookie@704] - instantiate ledger manager org.apache.bookkeeper.meta.HierarchicalLedgerManagerFactory
+2020-08-10 23:35:13,567 - ERROR - [Time-limited test:Journal$LastLogMark@251] - Problems reading from /tmp/bookie15561923961182956936test/current/lastMark (this is okay if it is the first time starting this bookie
+2020-08-10 23:35:13,568 - INFO  - [Time-limited test:Bookie@623] - Using ledger storage: org.apache.bookkeeper.bookie.SortedLedgerStorage
+2020-08-10 23:35:13,568 - INFO  - [Time-limited test:IndexPersistenceMgr@99] - openFileLimit = 20000
+2020-08-10 23:35:13,568 - INFO  - [Time-limited test:IndexInMemPageMgr@361] - maxDirectMemory = 2147483648, pageSize = 8192, pageLimit = 87381
+2020-08-10 23:35:13,570 - INFO  - [Time-limited test:ScanAndCompareGarbageCollector@105] - Over Replicated Ledger Deletion : enabled=true, interval=86400000
+2020-08-10 23:35:13,570 - INFO  - [Time-limited test:GarbageCollectorThread@225] - Minor Compaction : enabled=true, threshold=0.20000000298023224, interval=3600000
+2020-08-10 23:35:13,571 - INFO  - [Time-limited test:GarbageCollectorThread@227] - Major Compaction : enabled=true, threshold=0.800000011920929, interval=86400000
+2020-08-10 23:35:13,584 - INFO  - [Time-limited test:BookKeeperTestClient@90] - Wait for 127.0.0.1:46767 to become writable
+2020-08-10 23:35:13,585 - INFO  - [Time-limited test:Bookie@901] - Finished replaying journal in 0 ms.
+2020-08-10 23:35:13,587 - INFO  - [SyncThread-159-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 0 , logFileOffset - 0]}.
+2020-08-10 23:35:13,592 - INFO  - [Time-limited test:Bookie@991] - Finished reading journal, starting bookie
+2020-08-10 23:35:13,593 - INFO  - [BookieJournal-46767:Journal@909] - Starting journal on /tmp/bookie15561923961182956936test/current
+2020-08-10 23:35:13,593 - INFO  - [BookieJournal-46767:JournalChannel@157] - Opening journal /tmp/bookie15561923961182956936test/current/173da4c80ba.txn
+2020-08-10 23:35:13,593 - INFO  - [ForceWriteThread:Journal$ForceWriteThread@478] - ForceWrite Thread started
+2020-08-10 23:35:13,601 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:46767
+2020-08-10 23:35:13,853 - INFO  - [Time-limited test:BookKeeperClusterTestCase@670] - New bookie '127.0.0.1:46767' has been created.
+2020-08-10 23:35:13,855 - INFO  - [Time-limited test:BookKeeperClusterTestCase@164] - Setup testcase testStickyFlagWithStriping @ metadata service zk://localhost:33961/ledgers in 1049 ms.
+2020-08-10 23:35:13,858 - INFO  - [Time-limited test:ZKMetadataDriverBase@187] - Initialize zookeeper metadata driver at metadata service uri zk://localhost:33961/ledgers : zkServers = localhost:33961, ledgersRootPath = /ledgers.
+2020-08-10 23:35:13,863 - INFO  - [Time-limited test-EventThread:ZooKeeperWatcherBase@130] - ZooKeeper client is connected now.
+2020-08-10 23:35:13,867 - ERROR - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@267] - Failed to initialize DNS Resolver org.apache.bookkeeper.net.ScriptBasedMapping, used default subnet resolver : java.lang.RuntimeException: No network topology script is found when using script based DNS resolver.
+2020-08-10 23:35:13,868 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@214] - Initialize rackaware ensemble placement policy @ <Bookie:127.0.1.1:0> @ /default-rack : org.apache.bookkeeper.client.TopologyAwareEnsemblePlacementPolicy$DefaultResolver.
+2020-08-10 23:35:13,868 - INFO  - [Time-limited test:RackawareEnsemblePlacementPolicyImpl@224] - Not weighted
+2020-08-10 23:35:13,868 - INFO  - [Time-limited test:BookKeeper@509] - Weighted ledger placement is not enabled
+2020-08-10 23:35:13,870 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:37729
+2020-08-10 23:35:13,870 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:46767
+2020-08-10 23:35:13,870 - INFO  - [BookKeeperClientScheduler-OrderedScheduler-0-0:NetworkTopologyImpl@426] - Adding a new node: /default-rack/127.0.0.1:43145
+2020-08-10 23:35:13,872 - WARN  - [Time-limited test:BookieWatcherImpl@251] - New ensemble: [127.0.0.1:46767, 127.0.0.1:43145, 127.0.0.1:37729] is not adhering to Placement Policy. quarantinedBookies: []
+2020-08-10 23:35:13,913 - INFO  - [Time-limited test-EventThread:LedgerCreateOp@221] - Ensemble: [127.0.0.1:46767, 127.0.0.1:43145, 127.0.0.1:37729] for ledger: 0
+2020-08-10 23:35:13,921 - INFO  - [bookkeeper-io-166-1:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0x6a0c0516, L:/127.0.0.1:45372 - R:127.0.0.1/127.0.0.1:46767]
+2020-08-10 23:35:13,921 - INFO  - [bookkeeper-io-166-1:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:46767
+2020-08-10 23:35:13,921 - INFO  - [bookkeeper-io-166-1:PerChannelBookieClient$1@471] - connection [id: 0x6a0c0516, L:/127.0.0.1:45372 - R:127.0.0.1/127.0.0.1:46767] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:13,922 - INFO  - [bookie-io-134-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:13,923 - INFO  - [bookie-io-134-2:BookieRequestHandler@50] - Channel connected  [id: 0x3c64d4e9, L:/127.0.0.1:43145 - R:/127.0.0.1:53178]
+2020-08-10 23:35:13,922 - INFO  - [bookkeeper-io-166-2:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xa568f7be, L:/127.0.0.1:53178 - R:127.0.0.1/127.0.0.1:43145]
+2020-08-10 23:35:13,923 - INFO  - [bookkeeper-io-166-2:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:43145
+2020-08-10 23:35:13,922 - INFO  - [bookie-io-154-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:13,924 - INFO  - [bookie-io-154-2:BookieRequestHandler@50] - Channel connected  [id: 0xd577900e, L:/127.0.0.1:46767 - R:/127.0.0.1:45372]
+2020-08-10 23:35:13,924 - INFO  - [bookkeeper-io-166-2:PerChannelBookieClient$1@471] - connection [id: 0xa568f7be, L:/127.0.0.1:53178 - R:127.0.0.1/127.0.0.1:43145] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:13,942 - INFO  - [bookkeeper-io-166-3:PerChannelBookieClient$ConnectionFutureListener@2417] - Successfully connected to bookie: [id: 0xa3c8d839, L:/127.0.0.1:37244 - R:127.0.0.1/127.0.0.1:37729]
+2020-08-10 23:35:13,943 - INFO  - [bookkeeper-io-166-3:PerChannelBookieClient$ConnectionFutureListener@2425] - Successfully connected to bookie: 127.0.0.1:37729
+2020-08-10 23:35:13,943 - INFO  - [bookie-io-144-2:AuthHandler$ServerSideHandler$AuthHandshakeCompleteCallback@219] - Authentication success on server side
+2020-08-10 23:35:13,944 - INFO  - [bookie-io-144-2:BookieRequestHandler@50] - Channel connected  [id: 0x997df32b, L:/127.0.0.1:37729 - R:/127.0.0.1:37244]
+2020-08-10 23:35:13,943 - INFO  - [bookkeeper-io-166-3:PerChannelBookieClient$1@471] - connection [id: 0xa3c8d839, L:/127.0.0.1:37244 - R:127.0.0.1/127.0.0.1:37729] authenticated as BookKeeperPrincipal{ANONYMOUS}
+2020-08-10 23:35:14,030 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:37729
+2020-08-10 23:35:14,031 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:46767
+2020-08-10 23:35:14,031 - INFO  - [bookkeeper-io-166-3:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xa3c8d839, L:/127.0.0.1:37244 ! R:127.0.0.1/127.0.0.1:37729]
+2020-08-10 23:35:14,031 - INFO  - [bookie-io-144-2:BookieRequestHandler@61] - Channels disconnected: [id: 0x997df32b, L:/127.0.0.1:37729 ! R:/127.0.0.1:37244]
+2020-08-10 23:35:14,032 - INFO  - [bookkeeper-io-166-1:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0x6a0c0516, L:/127.0.0.1:45372 ! R:127.0.0.1/127.0.0.1:46767]
+2020-08-10 23:35:14,033 - INFO  - [bookie-io-154-2:BookieRequestHandler@61] - Channels disconnected: [id: 0xd577900e, L:/127.0.0.1:46767 ! R:/127.0.0.1:45372]
+2020-08-10 23:35:14,033 - INFO  - [Time-limited test:PerChannelBookieClient@1029] - Closing the per channel bookie client for 127.0.0.1:43145
+2020-08-10 23:35:14,034 - INFO  - [bookkeeper-io-166-2:PerChannelBookieClient@1210] - Disconnected from bookie channel [id: 0xa568f7be, L:/127.0.0.1:53178 ! R:127.0.0.1/127.0.0.1:43145]
+2020-08-10 23:35:14,034 - INFO  - [bookie-io-134-2:BookieRequestHandler@61] - Channels disconnected: [id: 0x3c64d4e9, L:/127.0.0.1:43145 ! R:/127.0.0.1:53178]
+2020-08-10 23:35:14,145 - INFO  - [Time-limited test:BookKeeperClusterTestCase@185] - TearDown
+2020-08-10 23:35:14,254 - INFO  - [Time-limited test:BookieServer@203] - Shutting down BookieServer
+2020-08-10 23:35:14,256 - INFO  - [Time-limited test:BookieNettyServer@424] - Shutting down BookieNettyServer
+2020-08-10 23:35:14,265 - INFO  - [Time-limited test:Bookie@1176] - Shutting down Bookie-43145 with exitCode 0
+2020-08-10 23:35:14,265 - INFO  - [Time-limited test:Bookie@1185] - Turning bookie to read only during shut down
+2020-08-10 23:35:14,265 - INFO  - [Time-limited test:SyncThread@203] - Shutting down SyncThread
+2020-08-10 23:35:14,266 - INFO  - [SyncThread-139-1:EntryLogManagerBase@146] - Creating a new entry log file because current active log channel has not initialized yet
+2020-08-10 23:35:14,267 - INFO  - [SyncThread-139-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie16434245982678997181test/current/0.log for logId 0.
+2020-08-10 23:35:14,271 - INFO  - [pool-96-thread-1:EntryLoggerAllocator@181] - Created new entry log file /tmp/bookie16434245982678997181test/current/1.log for logId 1.
+2020-08-10 23:35:14,276 - INFO  - [SyncThread-139-1:SyncThread@135] - Flush ledger storage at checkpoint CheckpointList{checkpoints=[LogMark: logFileId - 1597095312938 , logFileOffset - 4096]}.

@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.bookkeeper.bookie.BookieWriteToJournalTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 7.642 s <<< FAILURE! - in org.apache.bookkeeper.bookie.BookieWriteToJournalTest
+testJournalLogAddEntryCalledCorrectly(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 1.647 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x3a175162) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x3a175162
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testJournalLogAddEntryCalledCorrectly(BookieWriteToJournalTest.java:94)
+
+testForceLedger(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 0.252 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testForceLedger(BookieWriteToJournalTest.java:160)
+
+testJournalLogAddEntryCalledCorrectly(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 0.954 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x3e03046d) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x3e03046d
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testJournalLogAddEntryCalledCorrectly(BookieWriteToJournalTest.java:94)
+
+testForceLedger(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 0.129 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testForceLedger(BookieWriteToJournalTest.java:160)
+
+testJournalLogAddEntryCalledCorrectly(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 0.856 s  <<< ERROR!
+java.lang.IllegalAccessError: class javax.naming.spi.NamingManager (in unnamed module @0x215a0264) cannot access class jdk.internal.loader.ClassLoaderValue (in module java.base) because module java.base does not export jdk.internal.loader to unnamed module @0x215a0264
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testJournalLogAddEntryCalledCorrectly(BookieWriteToJournalTest.java:94)
+
+testForceLedger(org.apache.bookkeeper.bookie.BookieWriteToJournalTest)  Time elapsed: 0.107 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class javax.naming.spi.NamingManager
+	at org.apache.bookkeeper.bookie.BookieWriteToJournalTest.testForceLedger(BookieWriteToJournalTest.java:160)
+

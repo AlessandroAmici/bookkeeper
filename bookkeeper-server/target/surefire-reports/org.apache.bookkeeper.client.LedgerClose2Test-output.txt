@@ -1,0 +1,967 @@
+2020-08-10 23:41:58,428 - INFO  - [mock-executor-OrderedScheduler-0-0:Crc32cIntChecksum@41] - SSE4.2 CRC32C provider initialized
+2020-08-10 23:41:58,452 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:41:58,456 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:41:58,457 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:41:58,466 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 1
+2020-08-10 23:41:58,466 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 1
+2020-08-10 23:41:58,467 - WARN  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@168] - [b3:3181;L10] erroring write 1
+2020-08-10 23:41:58,470 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 1
+2020-08-10 23:41:58,471 - WARN  - [mock-executor-OrderedScheduler-0-0:PendingAddOp@376] - Failed to write entry (10, 1): Write failed on bookie
+2020-08-10 23:41:58,499 - INFO  - [mock-executor-OrderedScheduler-0-0:LedgerHandle@1978] - New Ensemble: [b1:3181, b2:3181, b4:3181] for ledger: 10
+2020-08-10 23:41:58,500 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b4:3181;L10] write entry 1
+2020-08-10 23:41:58,520 - INFO  - [MockLedgerManager:MetadataUpdateLoop@150] - UpdateLoop(ledgerId=10,loopId=28ab8e03) conflict writing metadata to store, update local value and try again
+2020-08-10 23:41:58,540 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L10] write entry 0
+2020-08-10 23:41:58,540 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L10] write entry 0
+2020-08-10 23:41:58,541 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L10] write entry 0
+2020-08-10 23:41:58,548 - INFO  - [MockLedgerManager:MetadataUpdateLoop@150] - UpdateLoop(ledgerId=10,loopId=39c76e88) conflict writing metadata to store, update local value and try again
+2020-08-10 23:41:58,571 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L10 E0
+2020-08-10 23:41:58,583 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L123] write entry 0
+2020-08-10 23:41:58,584 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L123] write entry 0
+2020-08-10 23:41:58,585 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L123] write entry 0
+2020-08-10 23:41:58,586 - INFO  - [main:LedgerClose2Test@290] - block writes from completing on bookies and metadata
+2020-08-10 23:41:58,588 - INFO  - [main:LedgerClose2Test@294] - try to add another entry, it will block
+2020-08-10 23:41:58,589 - INFO  - [main:LedgerClose2Test@297] - attempt one close, should block forever
+2020-08-10 23:41:58,589 - INFO  - [main:LedgerClose2Test@300] - attempt second close, should not finish before first one
+2020-08-10 23:41:58,590 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b2:3181;L123] write entry 1
+2020-08-10 23:41:58,591 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L123 E1
+2020-08-10 23:41:58,592 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b3:3181;L123] write entry 1
+2020-08-10 23:41:58,592 - INFO  - [mock-executor-OrderedScheduler-0-0:MockBookieClient@166] - [b1:3181;L123] write entry 1
+2020-08-10 23:41:59,100 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L0 E0
+2020-08-10 23:41:59,105 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L1 E0
+2020-08-10 23:41:59,110 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L2 E0
+2020-08-10 23:41:59,116 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L3 E0
+2020-08-10 23:41:59,120 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L4 E0
+2020-08-10 23:41:59,124 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L5 E0
+2020-08-10 23:41:59,129 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L6 E0
+2020-08-10 23:41:59,133 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L7 E0
+2020-08-10 23:41:59,138 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L8 E0
+2020-08-10 23:41:59,142 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L9 E0
+2020-08-10 23:41:59,147 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L10 E0
+2020-08-10 23:41:59,152 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L11 E0
+2020-08-10 23:41:59,156 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L12 E0
+2020-08-10 23:41:59,162 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L13 E0
+2020-08-10 23:41:59,167 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L14 E0
+2020-08-10 23:41:59,173 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L15 E0
+2020-08-10 23:41:59,181 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L16 E0
+2020-08-10 23:41:59,184 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L17 E0
+2020-08-10 23:41:59,193 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L18 E0
+2020-08-10 23:41:59,201 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L19 E0
+2020-08-10 23:41:59,206 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L20 E0
+2020-08-10 23:41:59,211 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 21
+2020-08-10 23:41:59,214 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 22
+2020-08-10 23:41:59,217 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 23
+2020-08-10 23:41:59,221 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 24
+2020-08-10 23:41:59,225 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 25
+2020-08-10 23:41:59,227 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L26 E0
+2020-08-10 23:41:59,232 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 27
+2020-08-10 23:41:59,240 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L28 E0
+2020-08-10 23:41:59,244 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L29 E0
+2020-08-10 23:41:59,249 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 30
+2020-08-10 23:41:59,252 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 31
+2020-08-10 23:41:59,255 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 32
+2020-08-10 23:41:59,259 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L33 E0
+2020-08-10 23:41:59,262 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L34 E0
+2020-08-10 23:41:59,266 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L35 E0
+2020-08-10 23:41:59,269 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L36 E0
+2020-08-10 23:41:59,273 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 37
+2020-08-10 23:41:59,275 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 38
+2020-08-10 23:41:59,279 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 39
+2020-08-10 23:41:59,281 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 40
+2020-08-10 23:41:59,284 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 41
+2020-08-10 23:41:59,287 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L42 E0
+2020-08-10 23:41:59,290 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 43
+2020-08-10 23:41:59,293 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 44
+2020-08-10 23:41:59,296 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 45
+2020-08-10 23:41:59,297 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L46 E0
+2020-08-10 23:41:59,301 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 47
+2020-08-10 23:41:59,304 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L48 E0
+2020-08-10 23:41:59,307 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L49 E0
+2020-08-10 23:41:59,311 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 50
+2020-08-10 23:41:59,313 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 51
+2020-08-10 23:41:59,317 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 52
+2020-08-10 23:41:59,319 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L53 E0
+2020-08-10 23:41:59,323 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 54
+2020-08-10 23:41:59,325 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L55 E0
+2020-08-10 23:41:59,328 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 56
+2020-08-10 23:41:59,331 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 57
+2020-08-10 23:41:59,339 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 58
+2020-08-10 23:41:59,343 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 59
+2020-08-10 23:41:59,345 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L60 E0
+2020-08-10 23:41:59,348 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 61
+2020-08-10 23:41:59,350 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L62 E0
+2020-08-10 23:41:59,354 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L63 E0
+2020-08-10 23:41:59,357 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L64 E0
+2020-08-10 23:41:59,360 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 65
+2020-08-10 23:41:59,363 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L66 E0
+2020-08-10 23:41:59,366 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L67 E0
+2020-08-10 23:41:59,371 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 68
+2020-08-10 23:41:59,373 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L69 E0
+2020-08-10 23:41:59,377 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L70 E0
+2020-08-10 23:41:59,379 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L71 E0
+2020-08-10 23:41:59,382 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L72 E0
+2020-08-10 23:41:59,385 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L73 E0
+2020-08-10 23:41:59,388 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L74 E0
+2020-08-10 23:41:59,392 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 75
+2020-08-10 23:41:59,393 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L76 E0
+2020-08-10 23:41:59,397 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 77
+2020-08-10 23:41:59,399 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L78 E0
+2020-08-10 23:41:59,401 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L79 E0
+2020-08-10 23:41:59,411 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 80
+2020-08-10 23:41:59,414 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L81 E0
+2020-08-10 23:41:59,416 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L82 E0
+2020-08-10 23:41:59,420 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 83
+2020-08-10 23:41:59,422 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L84 E0
+2020-08-10 23:41:59,425 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L85 E0
+2020-08-10 23:41:59,429 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L86 E0
+2020-08-10 23:41:59,431 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L87 E0
+2020-08-10 23:41:59,434 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L88 E0
+2020-08-10 23:41:59,437 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L89 E0
+2020-08-10 23:41:59,439 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L90 E0
+2020-08-10 23:41:59,443 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L91 E0
+2020-08-10 23:41:59,445 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L92 E0
+2020-08-10 23:41:59,448 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 93
+2020-08-10 23:41:59,450 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L94 E0
+2020-08-10 23:41:59,452 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L95 E0
+2020-08-10 23:41:59,455 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L96 E0
+2020-08-10 23:41:59,458 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L97 E0
+2020-08-10 23:41:59,461 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L98 E0
+2020-08-10 23:41:59,463 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L99 E0
+2020-08-10 23:41:59,465 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 100
+2020-08-10 23:41:59,467 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L101 E0
+2020-08-10 23:41:59,469 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L102 E0
+2020-08-10 23:41:59,471 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L103 E0
+2020-08-10 23:41:59,473 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L104 E0
+2020-08-10 23:41:59,475 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L105 E0
+2020-08-10 23:41:59,480 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L106 E0
+2020-08-10 23:41:59,483 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L107 E0
+2020-08-10 23:41:59,485 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L108 E0
+2020-08-10 23:41:59,488 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 109
+2020-08-10 23:41:59,490 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L110 E0
+2020-08-10 23:41:59,492 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L111 E0
+2020-08-10 23:41:59,496 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L112 E0
+2020-08-10 23:41:59,499 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L113 E0
+2020-08-10 23:41:59,501 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L114 E0
+2020-08-10 23:41:59,504 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 115
+2020-08-10 23:41:59,506 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 116
+2020-08-10 23:41:59,508 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L117 E0
+2020-08-10 23:41:59,512 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 118
+2020-08-10 23:41:59,514 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 119
+2020-08-10 23:41:59,516 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 120
+2020-08-10 23:41:59,518 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 121
+2020-08-10 23:41:59,524 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L122 E0
+2020-08-10 23:41:59,526 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L123 E0
+2020-08-10 23:41:59,530 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L124 E0
+2020-08-10 23:41:59,532 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 125
+2020-08-10 23:41:59,533 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 126
+2020-08-10 23:41:59,536 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L127 E0
+2020-08-10 23:41:59,539 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L128 E0
+2020-08-10 23:41:59,541 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L129 E0
+2020-08-10 23:41:59,544 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L130 E0
+2020-08-10 23:41:59,547 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L131 E0
+2020-08-10 23:41:59,549 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L132 E0
+2020-08-10 23:41:59,552 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L133 E0
+2020-08-10 23:41:59,554 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L134 E0
+2020-08-10 23:41:59,556 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L135 E0
+2020-08-10 23:41:59,559 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 136
+2020-08-10 23:41:59,561 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 137
+2020-08-10 23:41:59,562 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L138 E0
+2020-08-10 23:41:59,564 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L139 E0
+2020-08-10 23:41:59,565 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L140 E0
+2020-08-10 23:41:59,569 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 141
+2020-08-10 23:41:59,570 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L142 E0
+2020-08-10 23:41:59,572 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 143
+2020-08-10 23:41:59,573 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L144 E0
+2020-08-10 23:41:59,576 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 145
+2020-08-10 23:41:59,578 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L146 E0
+2020-08-10 23:41:59,580 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 147
+2020-08-10 23:41:59,581 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L148 E0
+2020-08-10 23:41:59,584 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 149
+2020-08-10 23:41:59,586 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L150 E0
+2020-08-10 23:41:59,588 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L151 E0
+2020-08-10 23:41:59,590 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L152 E0
+2020-08-10 23:41:59,592 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 153
+2020-08-10 23:41:59,594 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 154
+2020-08-10 23:41:59,596 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L155 E0
+2020-08-10 23:41:59,598 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L156 E0
+2020-08-10 23:41:59,601 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 157
+2020-08-10 23:41:59,603 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L158 E0
+2020-08-10 23:41:59,604 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L159 E0
+2020-08-10 23:41:59,606 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L160 E0
+2020-08-10 23:41:59,609 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 161
+2020-08-10 23:41:59,611 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L162 E0
+2020-08-10 23:41:59,614 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L163 E0
+2020-08-10 23:41:59,619 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L164 E0
+2020-08-10 23:41:59,622 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L165 E0
+2020-08-10 23:41:59,624 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 166
+2020-08-10 23:41:59,626 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 167
+2020-08-10 23:41:59,628 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L168 E0
+2020-08-10 23:41:59,630 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L169 E0
+2020-08-10 23:41:59,632 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 170
+2020-08-10 23:41:59,634 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L171 E0
+2020-08-10 23:41:59,636 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L172 E0
+2020-08-10 23:41:59,638 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L173 E0
+2020-08-10 23:41:59,639 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L174 E0
+2020-08-10 23:41:59,641 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 175
+2020-08-10 23:41:59,643 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 176
+2020-08-10 23:41:59,644 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L177 E0
+2020-08-10 23:41:59,646 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L178 E0
+2020-08-10 23:41:59,648 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 179
+2020-08-10 23:41:59,649 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L180 E0
+2020-08-10 23:41:59,652 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L181 E0
+2020-08-10 23:41:59,654 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L182 E0
+2020-08-10 23:41:59,655 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L183 E0
+2020-08-10 23:41:59,657 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L184 E0
+2020-08-10 23:41:59,660 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L185 E0
+2020-08-10 23:41:59,661 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 186
+2020-08-10 23:41:59,663 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L187 E0
+2020-08-10 23:41:59,665 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L188 E0
+2020-08-10 23:41:59,668 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 189
+2020-08-10 23:41:59,669 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L190 E0
+2020-08-10 23:41:59,671 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L191 E0
+2020-08-10 23:41:59,673 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L192 E0
+2020-08-10 23:41:59,675 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L193 E0
+2020-08-10 23:41:59,677 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L194 E0
+2020-08-10 23:41:59,678 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L195 E0
+2020-08-10 23:41:59,680 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L196 E0
+2020-08-10 23:41:59,683 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 197
+2020-08-10 23:41:59,685 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 198
+2020-08-10 23:41:59,686 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L199 E0
+2020-08-10 23:41:59,687 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L200 E0
+2020-08-10 23:41:59,689 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 201
+2020-08-10 23:41:59,691 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 202
+2020-08-10 23:41:59,693 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L203 E0
+2020-08-10 23:41:59,694 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L204 E0
+2020-08-10 23:41:59,696 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L205 E0
+2020-08-10 23:41:59,698 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L206 E0
+2020-08-10 23:41:59,700 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L207 E0
+2020-08-10 23:41:59,702 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L208 E0
+2020-08-10 23:41:59,703 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L209 E0
+2020-08-10 23:41:59,705 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 210
+2020-08-10 23:41:59,707 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L211 E0
+2020-08-10 23:41:59,713 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L212 E0
+2020-08-10 23:41:59,716 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L213 E0
+2020-08-10 23:41:59,718 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L214 E0
+2020-08-10 23:41:59,720 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L215 E0
+2020-08-10 23:41:59,721 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L216 E0
+2020-08-10 23:41:59,724 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L217 E0
+2020-08-10 23:41:59,726 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L218 E0
+2020-08-10 23:41:59,727 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L219 E0
+2020-08-10 23:41:59,729 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L220 E0
+2020-08-10 23:41:59,731 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L221 E0
+2020-08-10 23:41:59,733 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L222 E0
+2020-08-10 23:41:59,735 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L223 E0
+2020-08-10 23:41:59,737 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L224 E0
+2020-08-10 23:41:59,740 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 225
+2020-08-10 23:41:59,744 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 226
+2020-08-10 23:41:59,746 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 227
+2020-08-10 23:41:59,749 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 228
+2020-08-10 23:41:59,750 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L229 E0
+2020-08-10 23:41:59,752 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L230 E0
+2020-08-10 23:41:59,753 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L231 E0
+2020-08-10 23:41:59,755 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L232 E0
+2020-08-10 23:41:59,758 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L233 E0
+2020-08-10 23:41:59,759 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L234 E0
+2020-08-10 23:41:59,761 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L235 E0
+2020-08-10 23:41:59,762 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L236 E0
+2020-08-10 23:41:59,765 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L237 E0
+2020-08-10 23:41:59,766 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L238 E0
+2020-08-10 23:41:59,768 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L239 E0
+2020-08-10 23:41:59,770 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L240 E0
+2020-08-10 23:41:59,772 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L241 E0
+2020-08-10 23:41:59,774 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L242 E0
+2020-08-10 23:41:59,775 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L243 E0
+2020-08-10 23:41:59,778 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 244
+2020-08-10 23:41:59,780 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 245
+2020-08-10 23:41:59,781 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L246 E0
+2020-08-10 23:41:59,782 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L247 E0
+2020-08-10 23:41:59,789 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L248 E0
+2020-08-10 23:41:59,792 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L249 E0
+2020-08-10 23:41:59,794 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 250
+2020-08-10 23:41:59,802 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L251 E0
+2020-08-10 23:41:59,805 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 252
+2020-08-10 23:41:59,806 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L253 E0
+2020-08-10 23:41:59,814 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L254 E0
+2020-08-10 23:41:59,816 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 255
+2020-08-10 23:41:59,818 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L256 E0
+2020-08-10 23:41:59,820 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 257
+2020-08-10 23:41:59,822 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 258
+2020-08-10 23:41:59,823 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L259 E0
+2020-08-10 23:41:59,825 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L260 E0
+2020-08-10 23:41:59,828 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 261
+2020-08-10 23:41:59,829 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 262
+2020-08-10 23:41:59,831 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L263 E0
+2020-08-10 23:41:59,832 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L264 E0
+2020-08-10 23:41:59,834 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L265 E0
+2020-08-10 23:41:59,836 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L266 E0
+2020-08-10 23:41:59,838 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L267 E0
+2020-08-10 23:41:59,840 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L268 E0
+2020-08-10 23:41:59,842 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L269 E0
+2020-08-10 23:41:59,845 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L270 E0
+2020-08-10 23:41:59,846 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L271 E0
+2020-08-10 23:41:59,848 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L272 E0
+2020-08-10 23:41:59,850 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L273 E0
+2020-08-10 23:41:59,852 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L274 E0
+2020-08-10 23:41:59,854 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L275 E0
+2020-08-10 23:41:59,855 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L276 E0
+2020-08-10 23:41:59,857 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 277
+2020-08-10 23:41:59,860 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 278
+2020-08-10 23:41:59,861 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 279
+2020-08-10 23:41:59,863 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L280 E0
+2020-08-10 23:41:59,865 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L281 E0
+2020-08-10 23:41:59,869 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 282
+2020-08-10 23:41:59,870 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L283 E0
+2020-08-10 23:41:59,872 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 284
+2020-08-10 23:41:59,873 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L285 E0
+2020-08-10 23:41:59,876 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L286 E0
+2020-08-10 23:41:59,878 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L287 E0
+2020-08-10 23:41:59,880 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L288 E0
+2020-08-10 23:41:59,882 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L289 E0
+2020-08-10 23:41:59,884 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L290 E0
+2020-08-10 23:41:59,885 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L291 E0
+2020-08-10 23:41:59,887 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L292 E0
+2020-08-10 23:41:59,889 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L293 E0
+2020-08-10 23:41:59,892 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L294 E0
+2020-08-10 23:41:59,894 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L295 E0
+2020-08-10 23:41:59,895 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 296
+2020-08-10 23:41:59,897 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L297 E0
+2020-08-10 23:41:59,900 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L298 E0
+2020-08-10 23:41:59,901 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L299 E0
+2020-08-10 23:41:59,903 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L300 E0
+2020-08-10 23:41:59,905 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 301
+2020-08-10 23:41:59,907 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 302
+2020-08-10 23:41:59,908 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L303 E0
+2020-08-10 23:41:59,909 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L304 E0
+2020-08-10 23:41:59,913 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L305 E0
+2020-08-10 23:41:59,915 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L306 E0
+2020-08-10 23:41:59,917 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L307 E0
+2020-08-10 23:41:59,918 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L308 E0
+2020-08-10 23:41:59,920 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L309 E0
+2020-08-10 23:41:59,922 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L310 E0
+2020-08-10 23:41:59,924 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 311
+2020-08-10 23:41:59,925 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L312 E0
+2020-08-10 23:41:59,926 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L313 E0
+2020-08-10 23:41:59,929 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 314
+2020-08-10 23:41:59,931 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L315 E0
+2020-08-10 23:41:59,933 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L316 E0
+2020-08-10 23:41:59,934 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L317 E0
+2020-08-10 23:41:59,936 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L318 E0
+2020-08-10 23:41:59,938 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L319 E0
+2020-08-10 23:41:59,940 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L320 E0
+2020-08-10 23:41:59,942 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L321 E0
+2020-08-10 23:41:59,944 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L322 E0
+2020-08-10 23:41:59,947 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 323
+2020-08-10 23:41:59,949 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 324
+2020-08-10 23:41:59,951 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 325
+2020-08-10 23:41:59,952 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 326
+2020-08-10 23:41:59,953 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 327
+2020-08-10 23:41:59,955 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 328
+2020-08-10 23:41:59,957 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 329
+2020-08-10 23:41:59,959 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L330 E0
+2020-08-10 23:41:59,960 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L331 E0
+2020-08-10 23:41:59,961 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L332 E0
+2020-08-10 23:41:59,963 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 333
+2020-08-10 23:41:59,965 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L334 E0
+2020-08-10 23:41:59,967 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L335 E0
+2020-08-10 23:41:59,969 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L336 E0
+2020-08-10 23:41:59,971 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L337 E0
+2020-08-10 23:41:59,974 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L338 E0
+2020-08-10 23:41:59,976 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 339
+2020-08-10 23:41:59,978 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L340 E0
+2020-08-10 23:41:59,981 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 341
+2020-08-10 23:41:59,982 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L342 E0
+2020-08-10 23:41:59,983 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L343 E0
+2020-08-10 23:41:59,985 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L344 E0
+2020-08-10 23:41:59,987 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L345 E0
+2020-08-10 23:41:59,989 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L346 E0
+2020-08-10 23:41:59,991 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L347 E0
+2020-08-10 23:41:59,992 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L348 E0
+2020-08-10 23:41:59,995 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L349 E0
+2020-08-10 23:41:59,999 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L350 E0
+2020-08-10 23:42:00,005 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L351 E0
+2020-08-10 23:42:00,008 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L352 E0
+2020-08-10 23:42:00,012 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L353 E0
+2020-08-10 23:42:00,017 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 354
+2020-08-10 23:42:00,018 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L355 E0
+2020-08-10 23:42:00,020 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L356 E0
+2020-08-10 23:42:00,023 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L357 E0
+2020-08-10 23:42:00,026 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L358 E0
+2020-08-10 23:42:00,029 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L359 E0
+2020-08-10 23:42:00,032 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 360
+2020-08-10 23:42:00,033 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L361 E0
+2020-08-10 23:42:00,034 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L362 E0
+2020-08-10 23:42:00,036 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L363 E0
+2020-08-10 23:42:00,040 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 364
+2020-08-10 23:42:00,041 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L365 E0
+2020-08-10 23:42:00,042 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L366 E0
+2020-08-10 23:42:00,043 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L367 E0
+2020-08-10 23:42:00,045 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L368 E0
+2020-08-10 23:42:00,047 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 369
+2020-08-10 23:42:00,049 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L370 E0
+2020-08-10 23:42:00,050 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L371 E0
+2020-08-10 23:42:00,052 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L372 E0
+2020-08-10 23:42:00,053 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L373 E0
+2020-08-10 23:42:00,056 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L374 E0
+2020-08-10 23:42:00,057 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L375 E0
+2020-08-10 23:42:00,059 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 376
+2020-08-10 23:42:00,061 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L377 E0
+2020-08-10 23:42:00,064 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 378
+2020-08-10 23:42:00,065 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L379 E0
+2020-08-10 23:42:00,067 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L380 E0
+2020-08-10 23:42:00,070 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L381 E0
+2020-08-10 23:42:00,072 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L382 E0
+2020-08-10 23:42:00,074 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L383 E0
+2020-08-10 23:42:00,075 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L384 E0
+2020-08-10 23:42:00,078 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 385
+2020-08-10 23:42:00,079 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L386 E0
+2020-08-10 23:42:00,081 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L387 E0
+2020-08-10 23:42:00,082 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L388 E0
+2020-08-10 23:42:00,084 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L389 E0
+2020-08-10 23:42:00,086 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L390 E0
+2020-08-10 23:42:00,088 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L391 E0
+2020-08-10 23:42:00,089 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L392 E0
+2020-08-10 23:42:00,091 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L393 E0
+2020-08-10 23:42:00,092 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L394 E0
+2020-08-10 23:42:00,094 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L395 E0
+2020-08-10 23:42:00,097 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L396 E0
+2020-08-10 23:42:00,103 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L397 E0
+2020-08-10 23:42:00,104 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L398 E0
+2020-08-10 23:42:00,106 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L399 E0
+2020-08-10 23:42:00,107 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L400 E0
+2020-08-10 23:42:00,110 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L401 E0
+2020-08-10 23:42:00,111 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L402 E0
+2020-08-10 23:42:00,113 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L403 E0
+2020-08-10 23:42:00,115 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 404
+2020-08-10 23:42:00,117 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 405
+2020-08-10 23:42:00,118 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L406 E0
+2020-08-10 23:42:00,120 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L407 E0
+2020-08-10 23:42:00,122 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L408 E0
+2020-08-10 23:42:00,123 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L409 E0
+2020-08-10 23:42:00,125 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L410 E0
+2020-08-10 23:42:00,127 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L411 E0
+2020-08-10 23:42:00,128 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L412 E0
+2020-08-10 23:42:00,131 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L413 E0
+2020-08-10 23:42:00,133 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L414 E0
+2020-08-10 23:42:00,135 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L415 E0
+2020-08-10 23:42:00,136 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L416 E0
+2020-08-10 23:42:00,140 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 417
+2020-08-10 23:42:00,142 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 418
+2020-08-10 23:42:00,144 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 419
+2020-08-10 23:42:00,145 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L420 E0
+2020-08-10 23:42:00,148 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 421
+2020-08-10 23:42:00,149 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L422 E0
+2020-08-10 23:42:00,150 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L423 E0
+2020-08-10 23:42:00,151 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L424 E0
+2020-08-10 23:42:00,153 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 425
+2020-08-10 23:42:00,155 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 426
+2020-08-10 23:42:00,156 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L427 E0
+2020-08-10 23:42:00,157 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L428 E0
+2020-08-10 23:42:00,158 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L429 E0
+2020-08-10 23:42:00,160 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L430 E0
+2020-08-10 23:42:00,162 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L431 E0
+2020-08-10 23:42:00,164 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L432 E0
+2020-08-10 23:42:00,165 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L433 E0
+2020-08-10 23:42:00,169 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L434 E0
+2020-08-10 23:42:00,186 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L435 E0
+2020-08-10 23:42:00,188 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L436 E0
+2020-08-10 23:42:00,189 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L437 E0
+2020-08-10 23:42:00,191 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L438 E0
+2020-08-10 23:42:00,194 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L439 E0
+2020-08-10 23:42:00,195 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L440 E0
+2020-08-10 23:42:00,196 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L441 E0
+2020-08-10 23:42:00,197 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L442 E0
+2020-08-10 23:42:00,207 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L443 E0
+2020-08-10 23:42:00,210 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L444 E0
+2020-08-10 23:42:00,212 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L445 E0
+2020-08-10 23:42:00,213 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L446 E0
+2020-08-10 23:42:00,214 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L447 E0
+2020-08-10 23:42:00,216 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L448 E0
+2020-08-10 23:42:00,218 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L449 E0
+2020-08-10 23:42:00,219 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L450 E0
+2020-08-10 23:42:00,220 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L451 E0
+2020-08-10 23:42:00,222 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L452 E0
+2020-08-10 23:42:00,223 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L453 E0
+2020-08-10 23:42:00,224 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L454 E0
+2020-08-10 23:42:00,226 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L455 E0
+2020-08-10 23:42:00,227 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L456 E0
+2020-08-10 23:42:00,228 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L457 E0
+2020-08-10 23:42:00,230 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L458 E0
+2020-08-10 23:42:00,231 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L459 E0
+2020-08-10 23:42:00,232 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L460 E0
+2020-08-10 23:42:00,234 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L461 E0
+2020-08-10 23:42:00,235 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 462
+2020-08-10 23:42:00,236 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L463 E0
+2020-08-10 23:42:00,238 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L464 E0
+2020-08-10 23:42:00,242 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L465 E0
+2020-08-10 23:42:00,244 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L466 E0
+2020-08-10 23:42:00,245 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L467 E0
+2020-08-10 23:42:00,248 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L468 E0
+2020-08-10 23:42:00,250 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 469
+2020-08-10 23:42:00,251 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L470 E0
+2020-08-10 23:42:00,253 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L471 E0
+2020-08-10 23:42:00,255 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L472 E0
+2020-08-10 23:42:00,259 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L473 E0
+2020-08-10 23:42:00,261 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L474 E0
+2020-08-10 23:42:00,262 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L475 E0
+2020-08-10 23:42:00,264 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L476 E0
+2020-08-10 23:42:00,266 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L477 E0
+2020-08-10 23:42:00,267 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L478 E0
+2020-08-10 23:42:00,269 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L479 E0
+2020-08-10 23:42:00,270 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L480 E0
+2020-08-10 23:42:00,271 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L481 E0
+2020-08-10 23:42:00,273 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L482 E0
+2020-08-10 23:42:00,275 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L483 E0
+2020-08-10 23:42:00,276 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 484
+2020-08-10 23:42:00,277 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L485 E0
+2020-08-10 23:42:00,278 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L486 E0
+2020-08-10 23:42:00,280 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 487
+2020-08-10 23:42:00,282 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 488
+2020-08-10 23:42:00,283 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L489 E0
+2020-08-10 23:42:00,284 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L490 E0
+2020-08-10 23:42:00,285 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L491 E0
+2020-08-10 23:42:00,286 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L492 E0
+2020-08-10 23:42:00,287 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L493 E0
+2020-08-10 23:42:00,288 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 494
+2020-08-10 23:42:00,289 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 495
+2020-08-10 23:42:00,290 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 496
+2020-08-10 23:42:00,291 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L497 E0
+2020-08-10 23:42:00,292 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L498 E0
+2020-08-10 23:42:00,293 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 499
+2020-08-10 23:42:00,294 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L500 E0
+2020-08-10 23:42:00,294 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L501 E0
+2020-08-10 23:42:00,296 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 502
+2020-08-10 23:42:00,298 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 503
+2020-08-10 23:42:00,300 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L504 E0
+2020-08-10 23:42:00,301 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 505
+2020-08-10 23:42:00,302 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L506 E0
+2020-08-10 23:42:00,304 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L507 E0
+2020-08-10 23:42:00,305 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L508 E0
+2020-08-10 23:42:00,307 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 509
+2020-08-10 23:42:00,311 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L510 E0
+2020-08-10 23:42:00,312 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L511 E0
+2020-08-10 23:42:00,314 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 512
+2020-08-10 23:42:00,316 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L513 E0
+2020-08-10 23:42:00,317 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L514 E0
+2020-08-10 23:42:00,318 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L515 E0
+2020-08-10 23:42:00,320 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L516 E0
+2020-08-10 23:42:00,321 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 517
+2020-08-10 23:42:00,322 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 518
+2020-08-10 23:42:00,324 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 519
+2020-08-10 23:42:00,325 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 520
+2020-08-10 23:42:00,326 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 521
+2020-08-10 23:42:00,327 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 522
+2020-08-10 23:42:00,329 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 523
+2020-08-10 23:42:00,331 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 524
+2020-08-10 23:42:00,338 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 525
+2020-08-10 23:42:00,339 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 526
+2020-08-10 23:42:00,340 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 527
+2020-08-10 23:42:00,341 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 528
+2020-08-10 23:42:00,342 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 529
+2020-08-10 23:42:00,343 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 530
+2020-08-10 23:42:00,346 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 531
+2020-08-10 23:42:00,347 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 532
+2020-08-10 23:42:00,348 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 533
+2020-08-10 23:42:00,349 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 534
+2020-08-10 23:42:00,350 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 535
+2020-08-10 23:42:00,351 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 536
+2020-08-10 23:42:00,352 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 537
+2020-08-10 23:42:00,353 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 538
+2020-08-10 23:42:00,354 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 539
+2020-08-10 23:42:00,355 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 540
+2020-08-10 23:42:00,356 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 541
+2020-08-10 23:42:00,357 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 542
+2020-08-10 23:42:00,358 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 543
+2020-08-10 23:42:00,360 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 544
+2020-08-10 23:42:00,360 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 545
+2020-08-10 23:42:00,361 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 546
+2020-08-10 23:42:00,362 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 547
+2020-08-10 23:42:00,363 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 548
+2020-08-10 23:42:00,364 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 549
+2020-08-10 23:42:00,365 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 550
+2020-08-10 23:42:00,366 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 551
+2020-08-10 23:42:00,368 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 552
+2020-08-10 23:42:00,369 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 553
+2020-08-10 23:42:00,370 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 554
+2020-08-10 23:42:00,371 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 555
+2020-08-10 23:42:00,372 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 556
+2020-08-10 23:42:00,373 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 557
+2020-08-10 23:42:00,384 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 558
+2020-08-10 23:42:00,385 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 559
+2020-08-10 23:42:00,386 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 560
+2020-08-10 23:42:00,387 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 561
+2020-08-10 23:42:00,389 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 562
+2020-08-10 23:42:00,390 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L563 E0
+2020-08-10 23:42:00,391 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L564 E0
+2020-08-10 23:42:00,392 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L565 E0
+2020-08-10 23:42:00,393 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L566 E0
+2020-08-10 23:42:00,394 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L567 E0
+2020-08-10 23:42:00,395 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L568 E0
+2020-08-10 23:42:00,396 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L569 E0
+2020-08-10 23:42:00,398 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L570 E0
+2020-08-10 23:42:00,400 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L571 E0
+2020-08-10 23:42:00,402 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L572 E0
+2020-08-10 23:42:00,403 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L573 E0
+2020-08-10 23:42:00,405 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L574 E0
+2020-08-10 23:42:00,406 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L575 E0
+2020-08-10 23:42:00,407 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L576 E0
+2020-08-10 23:42:00,408 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L577 E0
+2020-08-10 23:42:00,409 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L578 E0
+2020-08-10 23:42:00,410 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L579 E0
+2020-08-10 23:42:00,412 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 580
+2020-08-10 23:42:00,413 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L581 E0
+2020-08-10 23:42:00,414 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L582 E0
+2020-08-10 23:42:00,415 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L583 E0
+2020-08-10 23:42:00,416 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L584 E0
+2020-08-10 23:42:00,418 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L585 E0
+2020-08-10 23:42:00,421 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L586 E0
+2020-08-10 23:42:00,422 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L587 E0
+2020-08-10 23:42:00,423 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L588 E0
+2020-08-10 23:42:00,424 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L589 E0
+2020-08-10 23:42:00,425 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L590 E0
+2020-08-10 23:42:00,426 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L591 E0
+2020-08-10 23:42:00,427 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L592 E0
+2020-08-10 23:42:00,429 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L593 E0
+2020-08-10 23:42:00,430 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L594 E0
+2020-08-10 23:42:00,431 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L595 E0
+2020-08-10 23:42:00,432 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L596 E0
+2020-08-10 23:42:00,433 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L597 E0
+2020-08-10 23:42:00,434 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L598 E0
+2020-08-10 23:42:00,436 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L599 E0
+2020-08-10 23:42:00,438 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 600
+2020-08-10 23:42:00,439 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L601 E0
+2020-08-10 23:42:00,440 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L602 E0
+2020-08-10 23:42:00,441 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L603 E0
+2020-08-10 23:42:00,442 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L604 E0
+2020-08-10 23:42:00,444 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 605
+2020-08-10 23:42:00,445 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L606 E0
+2020-08-10 23:42:00,446 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L607 E0
+2020-08-10 23:42:00,448 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 608
+2020-08-10 23:42:00,449 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L609 E0
+2020-08-10 23:42:00,449 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L610 E0
+2020-08-10 23:42:00,450 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L611 E0
+2020-08-10 23:42:00,452 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L612 E0
+2020-08-10 23:42:00,454 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L613 E0
+2020-08-10 23:42:00,455 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L614 E0
+2020-08-10 23:42:00,460 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L615 E0
+2020-08-10 23:42:00,463 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L616 E0
+2020-08-10 23:42:00,465 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L617 E0
+2020-08-10 23:42:00,467 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L618 E0
+2020-08-10 23:42:00,469 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L619 E0
+2020-08-10 23:42:00,471 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L620 E0
+2020-08-10 23:42:00,472 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L621 E0
+2020-08-10 23:42:00,473 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L622 E0
+2020-08-10 23:42:00,475 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L623 E0
+2020-08-10 23:42:00,477 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L624 E0
+2020-08-10 23:42:00,478 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L625 E0
+2020-08-10 23:42:00,479 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L626 E0
+2020-08-10 23:42:00,480 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L627 E0
+2020-08-10 23:42:00,481 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L628 E0
+2020-08-10 23:42:00,490 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L629 E0
+2020-08-10 23:42:00,494 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L630 E0
+2020-08-10 23:42:00,496 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L631 E0
+2020-08-10 23:42:00,500 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L632 E0
+2020-08-10 23:42:00,502 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 633
+2020-08-10 23:42:00,504 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 634
+2020-08-10 23:42:00,505 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L635 E0
+2020-08-10 23:42:00,506 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L636 E0
+2020-08-10 23:42:00,507 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L637 E0
+2020-08-10 23:42:00,509 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L638 E0
+2020-08-10 23:42:00,511 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L639 E0
+2020-08-10 23:42:00,512 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L640 E0
+2020-08-10 23:42:00,513 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L641 E0
+2020-08-10 23:42:00,515 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L642 E0
+2020-08-10 23:42:00,516 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L643 E0
+2020-08-10 23:42:00,521 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L644 E0
+2020-08-10 23:42:00,522 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L645 E0
+2020-08-10 23:42:00,523 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L646 E0
+2020-08-10 23:42:00,525 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L647 E0
+2020-08-10 23:42:00,527 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 648
+2020-08-10 23:42:00,528 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L649 E0
+2020-08-10 23:42:00,533 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L650 E0
+2020-08-10 23:42:00,536 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L651 E0
+2020-08-10 23:42:00,537 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L652 E0
+2020-08-10 23:42:00,539 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 653
+2020-08-10 23:42:00,540 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L654 E0
+2020-08-10 23:42:00,541 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L655 E0
+2020-08-10 23:42:00,543 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L656 E0
+2020-08-10 23:42:00,544 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L657 E0
+2020-08-10 23:42:00,546 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L658 E0
+2020-08-10 23:42:00,547 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L659 E0
+2020-08-10 23:42:00,548 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L660 E0
+2020-08-10 23:42:00,553 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L661 E0
+2020-08-10 23:42:00,554 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L662 E0
+2020-08-10 23:42:00,556 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L663 E0
+2020-08-10 23:42:00,557 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L664 E0
+2020-08-10 23:42:00,559 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L665 E0
+2020-08-10 23:42:00,561 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L666 E0
+2020-08-10 23:42:00,562 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L667 E0
+2020-08-10 23:42:00,563 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L668 E0
+2020-08-10 23:42:00,564 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L669 E0
+2020-08-10 23:42:00,565 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L670 E0
+2020-08-10 23:42:00,566 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L671 E0
+2020-08-10 23:42:00,569 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 672
+2020-08-10 23:42:00,570 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 673
+2020-08-10 23:42:00,571 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 674
+2020-08-10 23:42:00,572 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 675
+2020-08-10 23:42:00,573 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 676
+2020-08-10 23:42:00,574 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 677
+2020-08-10 23:42:00,576 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 678
+2020-08-10 23:42:00,577 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 679
+2020-08-10 23:42:00,578 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 680
+2020-08-10 23:42:00,580 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 681
+2020-08-10 23:42:00,581 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 682
+2020-08-10 23:42:00,582 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 683
+2020-08-10 23:42:00,584 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 684
+2020-08-10 23:42:00,585 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 685
+2020-08-10 23:42:00,587 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 686
+2020-08-10 23:42:00,588 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 687
+2020-08-10 23:42:00,589 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 688
+2020-08-10 23:42:00,590 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 689
+2020-08-10 23:42:00,591 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 690
+2020-08-10 23:42:00,592 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 691
+2020-08-10 23:42:00,593 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 692
+2020-08-10 23:42:00,596 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 693
+2020-08-10 23:42:00,597 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 694
+2020-08-10 23:42:00,598 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 695
+2020-08-10 23:42:00,599 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 696
+2020-08-10 23:42:00,600 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 697
+2020-08-10 23:42:00,601 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 698
+2020-08-10 23:42:00,602 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 699
+2020-08-10 23:42:00,603 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 700
+2020-08-10 23:42:00,605 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 701
+2020-08-10 23:42:00,606 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 702
+2020-08-10 23:42:00,607 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 703
+2020-08-10 23:42:00,608 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 704
+2020-08-10 23:42:00,609 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 705
+2020-08-10 23:42:00,610 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 706
+2020-08-10 23:42:00,611 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 707
+2020-08-10 23:42:00,612 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 708
+2020-08-10 23:42:00,613 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 709
+2020-08-10 23:42:00,615 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 710
+2020-08-10 23:42:00,616 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 711
+2020-08-10 23:42:00,616 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 712
+2020-08-10 23:42:00,617 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 713
+2020-08-10 23:42:00,624 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 714
+2020-08-10 23:42:00,625 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 715
+2020-08-10 23:42:00,626 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 716
+2020-08-10 23:42:00,627 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 717
+2020-08-10 23:42:00,628 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 718
+2020-08-10 23:42:00,629 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 719
+2020-08-10 23:42:00,631 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 720
+2020-08-10 23:42:00,632 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 721
+2020-08-10 23:42:00,633 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 722
+2020-08-10 23:42:00,634 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 723
+2020-08-10 23:42:00,635 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 724
+2020-08-10 23:42:00,636 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 725
+2020-08-10 23:42:00,637 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 726
+2020-08-10 23:42:00,638 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 727
+2020-08-10 23:42:00,640 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 728
+2020-08-10 23:42:00,641 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 729
+2020-08-10 23:42:00,642 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 730
+2020-08-10 23:42:00,643 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 731
+2020-08-10 23:42:00,644 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 732
+2020-08-10 23:42:00,646 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 733
+2020-08-10 23:42:00,648 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 734
+2020-08-10 23:42:00,650 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 735
+2020-08-10 23:42:00,651 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 736
+2020-08-10 23:42:00,652 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 737
+2020-08-10 23:42:00,653 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 738
+2020-08-10 23:42:00,654 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 739
+2020-08-10 23:42:00,656 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 740
+2020-08-10 23:42:00,657 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 741
+2020-08-10 23:42:00,659 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 742
+2020-08-10 23:42:00,660 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 743
+2020-08-10 23:42:00,666 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 744
+2020-08-10 23:42:00,667 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 745
+2020-08-10 23:42:00,668 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 746
+2020-08-10 23:42:00,670 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 747
+2020-08-10 23:42:00,671 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 748
+2020-08-10 23:42:00,672 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 749
+2020-08-10 23:42:00,673 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 750
+2020-08-10 23:42:00,675 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 751
+2020-08-10 23:42:00,676 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 752
+2020-08-10 23:42:00,677 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 753
+2020-08-10 23:42:00,678 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 754
+2020-08-10 23:42:00,679 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 755
+2020-08-10 23:42:00,680 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 756
+2020-08-10 23:42:00,681 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 757
+2020-08-10 23:42:00,683 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 758
+2020-08-10 23:42:00,684 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 759
+2020-08-10 23:42:00,685 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 760
+2020-08-10 23:42:00,685 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 761
+2020-08-10 23:42:00,699 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 762
+2020-08-10 23:42:00,700 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 763
+2020-08-10 23:42:00,702 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 764
+2020-08-10 23:42:00,703 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 765
+2020-08-10 23:42:00,704 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 766
+2020-08-10 23:42:00,706 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 767
+2020-08-10 23:42:00,707 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 768
+2020-08-10 23:42:00,708 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 769
+2020-08-10 23:42:00,709 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 770
+2020-08-10 23:42:00,710 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 771
+2020-08-10 23:42:00,711 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 772
+2020-08-10 23:42:00,712 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 773
+2020-08-10 23:42:00,713 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 774
+2020-08-10 23:42:00,714 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 775
+2020-08-10 23:42:00,715 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 776
+2020-08-10 23:42:00,716 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 777
+2020-08-10 23:42:00,717 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 778
+2020-08-10 23:42:00,718 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 779
+2020-08-10 23:42:00,719 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 780
+2020-08-10 23:42:00,721 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 781
+2020-08-10 23:42:00,722 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 782
+2020-08-10 23:42:00,723 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 783
+2020-08-10 23:42:00,724 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 784
+2020-08-10 23:42:00,725 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L785 E0
+2020-08-10 23:42:00,726 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L786 E0
+2020-08-10 23:42:00,727 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L787 E0
+2020-08-10 23:42:00,729 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L788 E0
+2020-08-10 23:42:00,730 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L789 E0
+2020-08-10 23:42:00,731 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L790 E0
+2020-08-10 23:42:00,732 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L791 E0
+2020-08-10 23:42:00,733 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L792 E0
+2020-08-10 23:42:00,734 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 793
+2020-08-10 23:42:00,736 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 794
+2020-08-10 23:42:00,738 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 795
+2020-08-10 23:42:00,739 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L796 E0
+2020-08-10 23:42:00,741 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L797 E0
+2020-08-10 23:42:00,742 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L798 E0
+2020-08-10 23:42:00,744 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L799 E0
+2020-08-10 23:42:00,745 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L800 E0
+2020-08-10 23:42:00,746 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L801 E0
+2020-08-10 23:42:00,748 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L802 E0
+2020-08-10 23:42:00,750 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L803 E0
+2020-08-10 23:42:00,751 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L804 E0
+2020-08-10 23:42:00,752 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L805 E0
+2020-08-10 23:42:00,753 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L806 E0
+2020-08-10 23:42:00,755 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 807
+2020-08-10 23:42:00,757 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L808 E0
+2020-08-10 23:42:00,758 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L809 E0
+2020-08-10 23:42:00,759 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L810 E0
+2020-08-10 23:42:00,760 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L811 E0
+2020-08-10 23:42:00,761 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L812 E0
+2020-08-10 23:42:00,762 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L813 E0
+2020-08-10 23:42:00,763 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L814 E0
+2020-08-10 23:42:00,765 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L815 E0
+2020-08-10 23:42:00,766 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L816 E0
+2020-08-10 23:42:00,767 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L817 E0
+2020-08-10 23:42:00,769 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L818 E0
+2020-08-10 23:42:00,770 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L819 E0
+2020-08-10 23:42:00,772 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 820
+2020-08-10 23:42:00,773 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L821 E0
+2020-08-10 23:42:00,774 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L822 E0
+2020-08-10 23:42:00,775 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L823 E0
+2020-08-10 23:42:00,776 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L824 E0
+2020-08-10 23:42:00,777 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L825 E0
+2020-08-10 23:42:00,778 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 826
+2020-08-10 23:42:00,779 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L827 E0
+2020-08-10 23:42:00,781 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L828 E0
+2020-08-10 23:42:00,782 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 829
+2020-08-10 23:42:00,783 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 830
+2020-08-10 23:42:00,784 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L831 E0
+2020-08-10 23:42:00,786 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L832 E0
+2020-08-10 23:42:00,787 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L833 E0
+2020-08-10 23:42:00,788 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L834 E0
+2020-08-10 23:42:00,790 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L835 E0
+2020-08-10 23:42:00,792 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 836
+2020-08-10 23:42:00,793 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L837 E0
+2020-08-10 23:42:00,794 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L838 E0
+2020-08-10 23:42:00,795 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L839 E0
+2020-08-10 23:42:00,796 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L840 E0
+2020-08-10 23:42:00,798 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L841 E0
+2020-08-10 23:42:00,799 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L842 E0
+2020-08-10 23:42:00,801 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L843 E0
+2020-08-10 23:42:00,805 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L844 E0
+2020-08-10 23:42:00,807 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L845 E0
+2020-08-10 23:42:00,810 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L846 E0
+2020-08-10 23:42:00,811 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L847 E0
+2020-08-10 23:42:00,812 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L848 E0
+2020-08-10 23:42:00,812 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L849 E0
+2020-08-10 23:42:00,813 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L850 E0
+2020-08-10 23:42:00,814 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L851 E0
+2020-08-10 23:42:00,815 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L852 E0
+2020-08-10 23:42:00,817 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L853 E0
+2020-08-10 23:42:00,818 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L854 E0
+2020-08-10 23:42:00,819 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L855 E0
+2020-08-10 23:42:00,820 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L856 E0
+2020-08-10 23:42:00,821 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L857 E0
+2020-08-10 23:42:00,822 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L858 E0
+2020-08-10 23:42:00,823 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L859 E0
+2020-08-10 23:42:00,824 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L860 E0
+2020-08-10 23:42:00,825 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L861 E0
+2020-08-10 23:42:00,826 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L862 E0
+2020-08-10 23:42:00,827 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L863 E0
+2020-08-10 23:42:00,828 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L864 E0
+2020-08-10 23:42:00,829 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L865 E0
+2020-08-10 23:42:00,830 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L866 E0
+2020-08-10 23:42:00,831 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L867 E0
+2020-08-10 23:42:00,832 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L868 E0
+2020-08-10 23:42:00,834 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L869 E0
+2020-08-10 23:42:00,834 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L870 E0
+2020-08-10 23:42:00,835 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L871 E0
+2020-08-10 23:42:00,836 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L872 E0
+2020-08-10 23:42:00,837 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L873 E0
+2020-08-10 23:42:00,838 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L874 E0
+2020-08-10 23:42:00,839 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L875 E0
+2020-08-10 23:42:00,840 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L876 E0
+2020-08-10 23:42:00,842 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L877 E0
+2020-08-10 23:42:00,842 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L878 E0
+2020-08-10 23:42:00,843 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L879 E0
+2020-08-10 23:42:00,844 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L880 E0
+2020-08-10 23:42:00,845 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L881 E0
+2020-08-10 23:42:00,846 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L882 E0
+2020-08-10 23:42:00,846 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L883 E0
+2020-08-10 23:42:00,847 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L884 E0
+2020-08-10 23:42:00,849 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 885
+2020-08-10 23:42:00,850 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L886 E0
+2020-08-10 23:42:00,851 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L887 E0
+2020-08-10 23:42:00,852 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 888
+2020-08-10 23:42:00,853 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L889 E0
+2020-08-10 23:42:00,854 - WARN  - [mock-executor-OrderedScheduler-0-0:LedgerHandle$9@1323] - Attempt to add to closed ledger: 890
+2020-08-10 23:42:00,854 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L891 E0
+2020-08-10 23:42:00,856 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L892 E0
+2020-08-10 23:42:00,857 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L893 E0
+2020-08-10 23:42:00,858 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L894 E0
+2020-08-10 23:42:00,859 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L895 E0
+2020-08-10 23:42:00,860 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L896 E0
+2020-08-10 23:42:00,861 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L897 E0
+2020-08-10 23:42:00,863 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L898 E0
+2020-08-10 23:42:00,872 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L899 E0
+2020-08-10 23:42:00,874 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L900 E0
+2020-08-10 23:42:00,875 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L901 E0
+2020-08-10 23:42:00,876 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L902 E0
+2020-08-10 23:42:00,876 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L903 E0
+2020-08-10 23:42:00,877 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L904 E0
+2020-08-10 23:42:00,878 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L905 E0
+2020-08-10 23:42:00,879 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L906 E0
+2020-08-10 23:42:00,880 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L907 E0
+2020-08-10 23:42:00,882 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L908 E0
+2020-08-10 23:42:00,883 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L909 E0
+2020-08-10 23:42:00,883 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L910 E0
+2020-08-10 23:42:00,884 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L911 E0
+2020-08-10 23:42:00,885 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L912 E0
+2020-08-10 23:42:00,886 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L913 E0
+2020-08-10 23:42:00,887 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L914 E0
+2020-08-10 23:42:00,888 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L915 E0
+2020-08-10 23:42:00,890 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L916 E0
+2020-08-10 23:42:00,891 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L917 E0
+2020-08-10 23:42:00,892 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L918 E0
+2020-08-10 23:42:00,893 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L919 E0
+2020-08-10 23:42:00,894 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L920 E0
+2020-08-10 23:42:00,895 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L921 E0
+2020-08-10 23:42:00,896 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L922 E0
+2020-08-10 23:42:00,897 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L923 E0
+2020-08-10 23:42:00,899 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L924 E0
+2020-08-10 23:42:00,900 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L925 E0
+2020-08-10 23:42:00,900 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L926 E0
+2020-08-10 23:42:00,901 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L927 E0
+2020-08-10 23:42:00,902 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L928 E0
+2020-08-10 23:42:00,903 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L929 E0
+2020-08-10 23:42:00,904 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L930 E0
+2020-08-10 23:42:00,906 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L931 E0
+2020-08-10 23:42:00,907 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L932 E0
+2020-08-10 23:42:00,908 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L933 E0
+2020-08-10 23:42:00,909 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L934 E0
+2020-08-10 23:42:00,910 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L935 E0
+2020-08-10 23:42:00,911 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L936 E0
+2020-08-10 23:42:00,912 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L937 E0
+2020-08-10 23:42:00,913 - ERROR - [mock-executor-OrderedScheduler-0-0:PendingAddOp@426] - Write of ledger entry to quorum failed: L938 E0

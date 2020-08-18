@@ -1,0 +1,3 @@
+org/apache/bookkeeper/stats/prometheus/TestPrometheusMetricsProvider.class
+org/apache/bookkeeper/stats/prometheus/TestPrometheusFormatter.class
+org/apache/bookkeeper/stats/prometheus/TestPrometheusFormatter$Metric.class

@@ -1,0 +1,2 @@
+2020-08-10 23:15:59,270 - WARN  - [main:Crc32cIntChecksum@44] - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
+2020-08-10 23:15:59,537 - WARN  - [main:Crc32cLongChecksum@46] - Failed to load Circe JNI library. Falling back to Java based CRC32c provider
